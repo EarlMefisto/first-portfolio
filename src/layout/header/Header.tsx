@@ -5,7 +5,7 @@ import { Logo } from "../../components/logo/Logo";
 export const Header = () => {
   return (
     <StyledHeader>
-      <Logo/>
+      {/* <Logo/> */}
     </StyledHeader>
   );
 };
