@@ -1,13 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import photo from "../../../assets/img/your-image.jpg";
+import photo from "../../../assets/img/your-image.jpg"; // возможно, придётся поменять на svg формат
 import { FlexWrapper } from "../../../components/flexWrapper";
-// возможно, придётся поменять на svg формат
 
 export const Main = () => {
   return (
     <div>
-      <FlexWrapper align={"center"} justify={"space-around"}>
+      <FlexWrapper 
+        align={"center"}
+        justify={"space-around"}
+        background={"#FFFF"}
+      >
         <div>
           <h2>I’m Rayan Adlrdard</h2>
           <h1>Front-end Developer</h1>
