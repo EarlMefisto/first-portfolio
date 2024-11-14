@@ -5,7 +5,7 @@ import { FlexWrapper } from "../../../components/flexWrapper";
 
 export const Main = () => {
   return (
-    <StyledMainMenu>
+    <StyledMain>
       <FlexWrapper
         align={"center"}
         justify={"space-around"}
@@ -22,11 +22,11 @@ export const Main = () => {
         </div>
         <Photo src={photo} alt="" />
       </FlexWrapper>
-    </StyledMainMenu>
+    </StyledMain>
   );
 };
 
-const StyledMainMenu = styled.div`
+const StyledMain = styled.div`
   width: 80%;
 `;
 
