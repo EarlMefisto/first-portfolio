@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { FlexWrapper } from "../../../components/flexWrapper";
-import { Icon } from "../../../components/icon/Icon";
 import { SectionTitle } from "../../../components/SectionTitile";
-import { Service } from "./Service/Service";
+import { Service } from "./Service/PropsService";
 
 export const MyServices = () => {
   return (
@@ -12,7 +11,7 @@ export const MyServices = () => {
       <SectionText>
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. lorem ipsum
-      </SectionText>
+      </SectionText>{/* сделать все первые буквы капсом! */}
       <FlexWrapper wrap={"wrap"} justify={"space-between"}>
         <Service
           iconId={"coding"}
