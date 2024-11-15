@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import photo from "../../../assets/img/your-image.jpg"; // возможно, придётся поменять на svg формат
-import { FlexWrapper } from "../../../components/flexWrapper";
+import { FlexWrapper } from "../../../components/FlexWrapper";
 
 export const Main = () => {
   return (

@@ -5,6 +5,7 @@ import { MyServices } from "./layout/sections/myServices/MyServices";
 import { RightMenu } from "./components/menu/RightMenu/RightMenu";
 import { PricePlans } from "./layout/sections/pricePlans/PricePlans";
 import { Portfolio } from "./layout/sections/portfolio/Portfolio";
+import { Blog } from "./layout/sections/blog/Blog";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <MyServices />
         <PricePlans />
         <Portfolio/>
+        <Blog/>
       </MyFirstPortfolio>
     </div>
   );

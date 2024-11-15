@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { SectionTitle } from "../../../../components/SectionTitile";
+import { SectionText } from "../../../../components/SectionText";
 
 type PlansPropsType = {
   title: string;
@@ -11,14 +13,14 @@ type PlansPropsType = {
 export const Plans = (props: PlansPropsType) => {
   return (
     <StyledPlans>
-      <PlansTitile>{props.title}</PlansTitile>
+      <SectionTitle>{props.title}</SectionTitle>
       <PlansPrice>
         {props.currency} {props.price || 0.0}
       </PlansPrice>
-      <PlansText>
+      <SectionText>
         {props.description ||
           "For most businesses that want to optimize web queries"}
-      </PlansText>
+      </SectionText>
     </StyledPlans>
   );
 };
@@ -30,6 +32,5 @@ const StyledPlans = styled.div`
   background-color: white;
   text-align: center;
 `;
-const PlansTitile = styled.h3``;
+
 const PlansPrice = styled.h2``;
-const PlansText = styled.p``;

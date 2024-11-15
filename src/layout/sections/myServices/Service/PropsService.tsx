@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Icon } from "../../../../components/icon/Icon";
+import { SectionText } from "../../../../components/SectionText";
+import { SectionTitle } from "../../../../components/SectionTitile";
 
 type ServicePropsType = {
   iconId?: string;
@@ -12,8 +14,8 @@ export const Service = (props: ServicePropsType) => {
   return (
     <StyledService>
       <Icon iconId={props.iconId || "non"} />
-      <ServiceTitile>{props.title}</ServiceTitile>
-      <ServiceText>{props.description}</ServiceText>
+      <SectionTitle>{props.title}</SectionTitle>
+      <SectionText>{props.description}</SectionText>
     </StyledService>
   );
 };
@@ -25,5 +27,3 @@ margin: 0 21px 0 0;
 background-color: white;
 text-align: center;
 `;
-const ServiceTitile = styled.h3``;
-const ServiceText = styled.p``;

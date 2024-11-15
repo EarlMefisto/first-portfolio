@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { FlexWrapper } from "../../../components/flexWrapper";
+import { FlexWrapper } from "../../../components/FlexWrapper";
 import { SectionTitle } from "../../../components/SectionTitile";
 import { Service } from "./Service/PropsService";
+import { SectionText } from "../../../components/SectionText";
 
 export const MyServices = () => {
   return (
@@ -11,7 +12,7 @@ export const MyServices = () => {
       <SectionText>
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. lorem ipsum
-      </SectionText>{/* сделать все первые буквы капсом! */}
+      </SectionText>
       <FlexWrapper wrap={"wrap"} justify={"space-between"}>
         <Service
           iconId={"coding"}
@@ -42,7 +43,7 @@ export const MyServices = () => {
           title={"Advertising"}
           description={
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi."
-          } // сделать все первые буквы капсом!
+          }
         />
       </FlexWrapper>
     </StyledMyServices>
@@ -52,7 +53,4 @@ export const MyServices = () => {
 const StyledMyServices = styled.section`
   background-color: #f5f5f5;
   min-height: 100vh;
-`;
-const SectionText = styled.p`
-  text-align: center;
 `;
