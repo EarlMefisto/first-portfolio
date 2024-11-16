@@ -10,7 +10,7 @@ import blog3Img from "../../../assets/img/portfolio-image-3.webp";
 
 export const Blog = () => {
   return (
-    <div>
+    <StyledBlog>
       <SectionTitle>Blog</SectionTitle>
       <SectionText>
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -21,6 +21,10 @@ export const Blog = () => {
         <BlogPost src={blog2Img} title={"Make Business Card"} text={""} link={""}/>
         <BlogPost src={blog3Img} title={"How To Make Flyer Design"} text={""} link={""}/>
       </FlexWrapper>
-    </div>
+    </StyledBlog>
   );
 };
+
+const StyledBlog = styled.section`
+  min-height: 100vh;
+`

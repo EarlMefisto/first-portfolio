@@ -26,7 +26,7 @@ const PortfolioItems = [
 
 export const Portfolio = () => {
   return (
-    <div>
+    <StyledPortfolio>
       <SectionTitle>Portfolio</SectionTitle>
       <SectionText>
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -44,6 +44,10 @@ export const Portfolio = () => {
         <PortfolioPost src={portfolio8Img} />
         <PortfolioPost src={portfolio9Img} />
       </FlexWrapper>
-    </div>
+    </StyledPortfolio>
   );
 };
+
+const StyledPortfolio = styled.section`
+  
+`

@@ -51,6 +51,5 @@ export const MyServices = () => {
 };
 
 const StyledMyServices = styled.section`
-  background-color: #f5f5f5;
-  min-height: 100vh;
+  
 `;

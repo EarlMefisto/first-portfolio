@@ -6,17 +6,19 @@ import { RightMenu } from "./components/menu/RightMenu/RightMenu";
 import { PricePlans } from "./layout/sections/pricePlans/PricePlans";
 import { Portfolio } from "./layout/sections/portfolio/Portfolio";
 import { Blog } from "./layout/sections/blog/Blog";
+import { Recommendations } from "./layout/sections/recommendations/Recommendations";
 
 function App() {
   return (
     <div className="App">
       <MyFirstPortfolio>
         <Main />
-        <RightMenu/>
+        <RightMenu />
         <MyServices />
         <PricePlans />
-        <Portfolio/>
-        <Blog/>
+        <Recommendations />
+        <Portfolio />
+        <Blog />
       </MyFirstPortfolio>
     </div>
   );
