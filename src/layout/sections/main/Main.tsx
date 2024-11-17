@@ -7,7 +7,6 @@ export const Main = () => {
   return (
     <StyledMain>
       <FlexWrapper
-        justify={"space-between"}
         align={"center"}
         background={"#FFFF"}
       >
@@ -27,7 +26,9 @@ export const Main = () => {
 };
 
 const StyledMain = styled.div`
-  max-width: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 `;
 
 const Photo = styled.img`

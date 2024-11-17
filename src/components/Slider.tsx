@@ -28,11 +28,13 @@ export const Slider = (props: RecommendationsPropsType) => {
 
 const StyledSlider = styled.div`
   border: 1px solid;
+  
 `;
 
 const Slide = styled.div`
   max-width: 500px;
-  text-align: center;
+  text-align: start;
+  background-color: white;
 `;
 
 const SlideTitle = styled.h4`

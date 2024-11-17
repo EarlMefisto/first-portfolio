@@ -13,7 +13,7 @@ type ServicePropsType = {
 export const Service = (props: ServicePropsType) => {
   return (
     <StyledService>
-      <Icon iconId={props.iconId || "non"} />
+      <Icon iconId={props.iconId || "non"} width={"68px"} height={"68px"} viewBox={"0 0 68px 68px"}/>
       <SectionTitle>{props.title}</SectionTitle>
       <SectionText>{props.description}</SectionText>
     </StyledService>

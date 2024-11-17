@@ -7,6 +7,9 @@ import { PricePlans } from "./layout/sections/pricePlans/PricePlans";
 import { Portfolio } from "./layout/sections/portfolio/Portfolio";
 import { Blog } from "./layout/sections/blog/Blog";
 import { Recommendations } from "./layout/sections/recommendations/Recommendations";
+import { Contacts } from "./layout/sections/contacts/Contacts";
+import { Footer } from "./layout/footer/Footer";
+import { LogoBoard } from "./layout/sections/logoBoard/LogoBoard";
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
         <Recommendations />
         <Portfolio />
         <Blog />
+        <Contacts />
+        <LogoBoard/>
+        <Footer/>
       </MyFirstPortfolio>
     </div>
   );
