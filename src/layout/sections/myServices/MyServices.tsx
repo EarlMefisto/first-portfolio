@@ -4,52 +4,53 @@ import { FlexWrapper } from "../../../components/FlexWrapper";
 import { SectionTitle } from "../../../components/SectionTitile";
 import { Service } from "./Service/PropsService";
 import { SectionText } from "../../../components/SectionText";
+import { Container } from "../../../components/Container";
 
 export const MyServices = () => {
   return (
     <StyledMyServices>
-      <SectionTitle>My Services</SectionTitle>
-      <SectionText>
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. lorem ipsum
-      </SectionText>
-      <FlexWrapper wrap={"wrap"} justify={"space-between"}>
-        <Service
-          iconId={"coding"}
-          title={"Web Development"}
-          description={"Blog, E-commerce"}
-        />
-        <Service
-          iconId={"illustration"}
-          title={"UI/UX Design"}
-          description={"Mobile app, Website Design"}
-        />
-        <Service
-          iconId={"microphone"}
-          title={"Sound Design"}
-          description={"Voice Over, Beat Making"}
-        />
-        <Service
-          iconId={"gameDevelopment"}
-          title={"Game Design"}
-          description={"Character Design, Props & Objects"}
-        />
-        <Service
-          iconId={"photographer"}
-          title={"Photography"}
-          description={"Portrait, Product Photography"}
-        />
-        <Service
-          title={"Advertising"}
-          description={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi."
-          }
-        />
-      </FlexWrapper>
+      <Container>
+        <SectionTitle>My Services</SectionTitle>
+        <SectionText>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. lorem ipsum
+        </SectionText>
+        <FlexWrapper wrap={"wrap"} justify={"space-between"}>
+          <Service
+            iconId={"coding"}
+            title={"Web Development"}
+            description={"Blog, E-commerce"}
+          />
+          <Service
+            iconId={"illustration"}
+            title={"UI/UX Design"}
+            description={"Mobile app, Website Design"}
+          />
+          <Service
+            iconId={"microphone"}
+            title={"Sound Design"}
+            description={"Voice Over, Beat Making"}
+          />
+          <Service
+            iconId={"gameDevelopment"}
+            title={"Game Design"}
+            description={"Character Design, Props & Objects"}
+          />
+          <Service
+            iconId={"photographer"}
+            title={"Photography"}
+            description={"Portrait, Product Photography"}
+          />
+          <Service
+            title={"Advertising"}
+            description={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi."
+            }
+          />
+        </FlexWrapper>
+      </Container>
     </StyledMyServices>
   );
 };
 
-const StyledMyServices = styled.section`
-  
-`;
+const StyledMyServices = styled.section``;

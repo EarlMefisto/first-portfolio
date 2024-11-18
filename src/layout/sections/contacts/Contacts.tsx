@@ -4,14 +4,17 @@ import { SectionTitle } from "../../../components/SectionTitile";
 import { LeaveInfo } from "./leaveInfo/LeaveInfo";
 import { ContactInfo } from "./contactInfo/ContactInfo";
 import { FlexWrapper } from "../../../components/FlexWrapper";
+import { Container } from "../../../components/Container";
 
 export const Contacts = () => {
   return (
     <StyledContacts>
-      <FlexWrapper justify={"space-around"}>
-        <LeaveInfo />
-        <ContactInfo />
-      </FlexWrapper>
+      <Container>
+        <FlexWrapper justify={"space-around"}>
+          <LeaveInfo />
+          <ContactInfo />
+        </FlexWrapper>
+      </Container>
     </StyledContacts>
   );
 };

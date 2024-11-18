@@ -15,6 +15,7 @@ import portfolio6Img from "../../../assets/img/portfolio-image-6.webp";
 import portfolio7Img from "../../../assets/img/portfolio-image-7.webp";
 import portfolio8Img from "../../../assets/img/portfolio-image-8.webp";
 import portfolio9Img from "../../../assets/img/portfolio-image-9.webp";
+import { Container } from "../../../components/Container";
 
 const PortfolioItems = [
   "All Categories",
@@ -27,27 +28,33 @@ const PortfolioItems = [
 export const Portfolio = () => {
   return (
     <StyledPortfolio>
-      <SectionTitle>Portfolio</SectionTitle>
-      <SectionText>
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. lorem ipsum
-      </SectionText>
-      <Menu menuItems={PortfolioItems} />
-      <FlexWrapper>
-        <PortfolioPost src={portfolio1Img} />
-        <PortfolioPost src={portfolio2Img} />
-        <PortfolioPost src={portfolio3Img} />
-        <PortfolioPost src={portfolio4Img} />
-        <PortfolioPost src={portfolio5Img} />
-        <PortfolioPost src={portfolio6Img} />
-        <PortfolioPost src={portfolio7Img} />
-        <PortfolioPost src={portfolio8Img} />
-        <PortfolioPost src={portfolio9Img} />
-      </FlexWrapper>
+      <Container>
+        <SectionTitle>Portfolio</SectionTitle>
+        <SectionText>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. lorem ipsum
+        </SectionText>
+        <FlexWrapper
+          direction={"row"}
+          wrap={"nowrap"}
+          justify={"space-around"}
+        >
+          <Menu menuItems={PortfolioItems} />
+        </FlexWrapper>
+        <FlexWrapper wrap={"wrap"}>
+          <PortfolioPost src={portfolio1Img} />
+          <PortfolioPost src={portfolio2Img} />
+          <PortfolioPost src={portfolio3Img} />
+          <PortfolioPost src={portfolio4Img} />
+          <PortfolioPost src={portfolio5Img} />
+          <PortfolioPost src={portfolio6Img} />
+          <PortfolioPost src={portfolio7Img} />
+          <PortfolioPost src={portfolio8Img} />
+          <PortfolioPost src={portfolio9Img} />
+        </FlexWrapper>
+      </Container>
     </StyledPortfolio>
   );
 };
 
-const StyledPortfolio = styled.section`
-  
-`
+const StyledPortfolio = styled.section``;

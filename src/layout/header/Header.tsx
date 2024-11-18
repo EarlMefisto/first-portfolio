@@ -9,7 +9,7 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-  background-color: #942727;
+  
 `;
 
 

@@ -22,7 +22,6 @@ const StyledLeaveInfo = styled.div`
 `;
 
 const StyledLeaveInfoTitle = styled.h2`
-  background-color: #f5f5f5;
 `;
 
 const StyledLeaveInfoForm = styled.form`

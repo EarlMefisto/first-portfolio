@@ -24,6 +24,5 @@ const StyledService = styled.div`
 width: 30%;
 margin: 0 21px 0 0;
 
-background-color: white;
 text-align: center;
 `;

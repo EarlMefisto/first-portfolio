@@ -24,7 +24,7 @@ export const BlogPost = (props: BlogPostPropsType) => {
 };
 
 const StyledBlogPost = styled.div`
-  background-color: #ffffff;
+  background-color: white;
   max-width: 310px;
   width: 100%;
 

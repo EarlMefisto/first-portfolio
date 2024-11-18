@@ -16,7 +16,7 @@ export const Blog = () => {
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. lorem ipsum
       </SectionText>
-      <FlexWrapper>
+      <FlexWrapper wrap={"wrap"} justify={"center"}>
         <BlogPost src={blog1Img} title={"How To Make Web Tempates"} text={""} link={""}/>
         <BlogPost src={blog2Img} title={"Make Business Card"} text={""} link={""}/>
         <BlogPost src={blog3Img} title={"How To Make Flyer Design"} text={""} link={""}/>

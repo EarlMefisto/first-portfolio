@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-export const Menu = (props: { menuItems: Array<string> }) => {
+export const RIghtMenuMenu = (props: { menuItems: Array<string> }) => {
   return (
-    <StyledMenu>
+    <StyledRightMenuMenu>
       <ul>
         {props.menuItems.map((item: string, index: number) => {
           return (
@@ -13,12 +13,14 @@ export const Menu = (props: { menuItems: Array<string> }) => {
           );
         })}
       </ul>
-    </StyledMenu>
+    </StyledRightMenuMenu>
   );
 };
 
-const StyledMenu = styled.nav`
-  ul {
-    gap: 30px;
-  }
-`;
+const StyledRightMenuMenu = styled.nav``;
+
+// const StyledRightMenu = styled.nav`
+//   ul {
+//     gap: 30px;
+//   }
+// `;
