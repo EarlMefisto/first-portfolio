@@ -34,14 +34,10 @@ export const Portfolio = () => {
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. lorem ipsum
         </SectionText>
-        <FlexWrapper
-          direction={"row"}
-          wrap={"nowrap"}
-          justify={"space-around"}
-        >
+        <FlexWrapper >
           <Menu menuItems={PortfolioItems} />
         </FlexWrapper>
-        <FlexWrapper wrap={"wrap"}>
+        <FlexWrapper wrap={"wrap"} justify={"center"} >
           <PortfolioPost src={portfolio1Img} />
           <PortfolioPost src={portfolio2Img} />
           <PortfolioPost src={portfolio3Img} />
@@ -57,4 +53,5 @@ export const Portfolio = () => {
   );
 };
 
-const StyledPortfolio = styled.section``;
+const StyledPortfolio = styled.section`
+`;

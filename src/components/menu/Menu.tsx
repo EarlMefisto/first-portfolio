@@ -19,6 +19,6 @@ export const Menu = (props: { menuItems: Array<string> }) => {
 
 const StyledMenu = styled.nav`
   ul {
-    gap: 30px;
+    gap: 37px;
   }
 `;

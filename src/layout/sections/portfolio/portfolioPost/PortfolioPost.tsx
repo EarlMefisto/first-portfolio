@@ -13,12 +13,10 @@ export const PortfolioPost = (props: PortfolioPostPropsType) => {
   );
 };
 
-const StyledPortfolioPost = styled.div`
+const StyledPortfolioPost = styled.div``;
+const PortfolioPostImage = styled.img`
   max-width: 310px;
   width: 100%;
-  margin: 0 20px 0 0;
-`;
-const PortfolioPostImage = styled.img`
-  height: 300px;
+
   object-fit: cover;
 `;

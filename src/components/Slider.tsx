@@ -32,7 +32,7 @@ const StyledSlider = styled.div`
 `;
 
 const Slide = styled.div`
-  max-width: 500px;
+  max-width: 310px;
   text-align: start;
   background-color: white;
 `;
@@ -47,6 +47,6 @@ const SlideText = styled.p`
 
 const SlideProfile = styled.img``;
 
-const SlideName = styled.span``;
+const SlideName = styled.div``;
 
 const SlideSpecialization = styled.div``;

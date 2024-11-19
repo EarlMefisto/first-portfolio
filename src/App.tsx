@@ -2,7 +2,6 @@ import "./App.css";
 import styled from "styled-components";
 import { Main } from "./layout/sections/main/Main";
 import { MyServices } from "./layout/sections/myServices/MyServices";
-import { RightMenu } from "./components/menu/RightMenu/RightMenu";
 import { PricePlans } from "./layout/sections/pricePlans/PricePlans";
 import { Portfolio } from "./layout/sections/portfolio/Portfolio";
 import { Blog } from "./layout/sections/blog/Blog";
@@ -16,7 +15,6 @@ function App() {
     <div className="App">
       <MyFirstPortfolio>
         <Main />
-        <RightMenu />
         <MyServices />
         <PricePlans />
         <Recommendations />

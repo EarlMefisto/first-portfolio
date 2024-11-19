@@ -24,8 +24,10 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer``;
 const Copyright = styled.small`
-  font-family: var(--font-family);
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 160%;
+  text-transform: capitalize;
+  color: #2b2b2b;
 `;

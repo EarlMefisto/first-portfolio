@@ -8,16 +8,14 @@ export const Main = () => {
   return (
     <StyledMain>
       <Container>
-        <FlexWrapper align={"center"}>
-          <div>
-            <h2>I’m Rayan Adlrdard</h2>
-            <h1>Front-end Developer</h1>
-            <span>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
-              volutpat feugiat placerat lobortis. Natoque rutrum semper sed
-              suspendisse nunc lectus.
-            </span>
-          </div>
+        <FlexWrapper direction={"column"}>
+          <StyledMainTitleH2>I’m Rayan Adlrdard</StyledMainTitleH2>
+          <StyledMainTitleH1>Front-end Developer</StyledMainTitleH1>
+          <StyledMainText>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
+            volutpat feugiat placerat lobortis. Natoque rutrum semper sed
+            suspendisse nunc lectus.
+          </StyledMainText>
           <Photo src={photo} alt="" />
         </FlexWrapper>
       </Container>
@@ -26,10 +24,31 @@ export const Main = () => {
 };
 
 const StyledMain = styled.section`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #F5F5F5;
+
+`;
+
+const StyledMainTitleH2 = styled.h2`
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 124%;
+  color: #2b2b2b;
+`;
+
+const StyledMainTitleH1 = styled.h1`
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 124%;
+  color: #ffb400;
+`;
+
+const StyledMainText = styled.span`
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: capitalize;
 `;
 
 const Photo = styled.img`
