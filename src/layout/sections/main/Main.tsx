@@ -16,8 +16,9 @@ export const Main = () => {
             volutpat feugiat placerat lobortis. Natoque rutrum semper sed
             suspendisse nunc lectus.
           </StyledMainText>
-          <Photo src={photo} alt="" />
         </FlexWrapper>
+        <Photo src={photo} alt="" />
+        <ButtonMain/>
       </Container>
     </StyledMain>
   );
@@ -55,5 +56,8 @@ const Photo = styled.img`
   width: 327px;
   height: 460px;
   object-fit: cover;
-  background-color: white;
 `;
+
+const ButtonMain = styled.button`
+  
+`
