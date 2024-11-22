@@ -1,10 +1,11 @@
 export const thems = {
     colors: {
-        primaryBg: "#F5F5F5",
-        secondaryBg: "#FFFFFF",
+        primaryBg: "#0F1624",
+        secondaryBg: "#27395E",
         accent: "#FFB400",
 
-        title: "#2B2B2B",
-        text: "#767676"
+        title: "#5D478B",
+        text: "#EEAEEE"
     } 
 }
+

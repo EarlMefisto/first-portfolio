@@ -7,5 +7,6 @@ export const SectionTitle = styled.h2`
   line-height: 124%;
   text-align: center;
   text-transform: capitalize;
-  color: #2b2b2b;
+  color: #5D478B;
+  margin-bottom: 25px;
 `;

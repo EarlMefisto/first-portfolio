@@ -16,7 +16,7 @@ export const Icon = (props: IconPropsType) => {
       height={props.height || "50"}
       viewBox={props.viewBox || "0 0 18 18"}
       
-      fill="none"
+      fill="#FFB400"
       xmlns="http://www.w3.org/2000/svg"
     >
       <use xlinkHref={`${iconsSprite}#${props.iconId}`} />

@@ -19,18 +19,26 @@ export const LeaveInfo = () => {
 
 const StyledLeaveInfo = styled.div`
   min-height: 50vh;
+  
 `;
 
 const StyledLeaveInfoTitle = styled.h2`
+display: flex;
+justify-content: center;
+color: #5D478B;
+
+margin-bottom: 50px;
 `;
 
 const StyledLeaveInfoForm = styled.form`
-max-width: 521px;
+max-width: 570px;
 width: 100%;
 display: flex;
 flex-direction: column;
 gap: 55px;
-background-color: white;
+background-color: #151f34;
 `;
 
-const StyledLeaveInfoField = styled.input``;
+const StyledLeaveInfoField = styled.input`
+background-color: #EEAEEE;
+`;
