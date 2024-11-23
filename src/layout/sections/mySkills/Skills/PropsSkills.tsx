@@ -36,7 +36,7 @@ export const Skills = (props: ServicePropsType) => {
 
 const StyledSkills = styled.div`
   text-align: center;
-  background-color: #27395e;
+  background-color: ${thems.colors.secondaryBg};
 `;
 
 const IconWrapper = styled.div`

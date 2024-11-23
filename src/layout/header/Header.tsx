@@ -28,8 +28,8 @@ const StyledHeader = styled.header`
   right: 200px;
   z-index: 99999;
 
-  border: 4px solid ${thems.colors.title};
-  border-radius: 10px;
+  border: 3px solid ${thems.colors.title};
+  border-radius: 5px;
 `;
 
 const HeaderWrapper = styled.div`

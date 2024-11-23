@@ -25,10 +25,11 @@ export const MyWorks = () => {
         <StyledMyWorksPost
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(2, auto)",
+            gridTemplateColumns: "repeat(3, auto)",
             gap: "20px",
           }}
         >
+          <MyWorksPost src={postImage1} />
           <MyWorksPost src={postImage1} />
           <MyWorksPost src={postImage1} />
         </StyledMyWorksPost>

@@ -44,5 +44,4 @@ const Copyright = styled.small`
   font-size: 15px;
   line-height: 160%;
   text-transform: capitalize;
-  color: #eeaeee;
 `;
