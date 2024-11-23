@@ -6,6 +6,7 @@ import { Footer } from "./layout/footer/Footer";
 import { MySkills } from "./layout/sections/mySkills/MySkills";
 import { Header } from "./layout/header/Header";
 import { MyWorks } from "./layout/sections/myWorks/MyWorks";
+import { thems } from "./styles/Thems";
 
 
 function App() {
@@ -25,4 +26,6 @@ function App() {
 
 export default App;
 
-const MyFirstPortfolio = styled.div``;
+const MyFirstPortfolio = styled.div`
+background-color: ${thems.colors.primaryBg};
+`;

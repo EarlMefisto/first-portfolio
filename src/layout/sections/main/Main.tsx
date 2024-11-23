@@ -5,13 +5,14 @@ import { Container } from "../../../components/Container";
 import { Button } from "../../../components/Button";
 import photo from "../../../assets/img/photo_2024-10-28_22-37-35.webp";
 import { thems } from "../../../styles/Thems";
+import { Icon } from "../../../components/icon/Icon";
 
 export const Main = () => {
   return (
-    <StyledMain>
+    <GlobalStyledMain>
       <Container>
-        <FlexWrapper align={"center"} justify={"space-around"}>
-          <div>
+        <FlexWrapper justify={"space-around"} align={"center"}>
+          <StyledMain>
             <StyledTitles>
               <StyledMainTitleH2>
                 I’m <span>Iryna Lebedeva</span>
@@ -25,25 +26,29 @@ export const Main = () => {
               amet sint. Velit officia consequat duis enim velit mollit. lorem
               ipsum
             </StyledMainText>
-          </div>
+            <ButtonWrapper>
+              <Button>More about me</Button>
+            </ButtonWrapper>
+          </StyledMain>
           <PhotoWrapper>
             <Photo src={photo} alt="My photo" />
           </PhotoWrapper>
         </FlexWrapper>
-        <Button>More about me</Button>
       </Container>
-    </StyledMain>
+    </GlobalStyledMain>
   );
 };
 
-const StyledMain = styled.div`
-  background-color: ${thems.colors.primaryBg};
+const GlobalStyledMain = styled.div`
+  margin-bottom: 100px;
 `;
+
+const StyledMain = styled.div``;
 
 const StyledTitles = styled.div`
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 32px;
   color: ${thems.colors.title};
 
   span {
@@ -51,24 +56,34 @@ const StyledTitles = styled.div`
   }
 `;
 
-const StyledMainTitleH2 = styled.h2``;
+const StyledMainTitleH2 = styled.h2`
+  margin: 93px 0 0 60px;
 
-const StyledMainTitleH1 = styled.h1``;
+  line-height: 124%;
+`;
+
+const StyledMainTitleH1 = styled.h1`
+  max-width: 500px;
+  margin: 0 0 0 60px;
+
+  line-height: 124%;
+`;
 
 const StyledMainText = styled.span`
   display: block;
   max-width: 435px;
+  margin: 18px 0 0 60px;
 
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 130%;
+  font-size: 15px;
+  line-height: 150%;
   text-transform: capitalize;
 `;
 
 const PhotoWrapper = styled.div`
-  margin: 40px ;
-  
+  margin: 40px;
+
   position: relative;
   z-index: 0;
 
@@ -76,11 +91,11 @@ const PhotoWrapper = styled.div`
     content: "";
     width: 340px;
     height: 485px;
-    border:  5px solid ${thems.colors.title};
+    border: 4px solid ${thems.colors.title};
 
     position: absolute;
-    top: -24px;
-    left: 24px;
+    top: -20px;
+    left: 20px;
     z-index: -1;
   }
 `;
@@ -89,4 +104,8 @@ const Photo = styled.img`
   width: 325px;
   height: 450px;
   object-fit: cover;
+`;
+
+const ButtonWrapper = styled.div`
+  margin: 25px 0 74px 60px;
 `;

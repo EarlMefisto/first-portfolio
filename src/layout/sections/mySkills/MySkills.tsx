@@ -20,7 +20,7 @@ export const MySkills = () => {
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(3, auto)",
-            gap: "10px",
+            gap: "20px",
           }}
         >
           <Skills
@@ -43,7 +43,7 @@ export const MySkills = () => {
           />
           <Skills
             iconId={"iconGit"}
-            viewBox={"0 0 512 300"}
+            viewBox={"0 0 512 30"}
             title={"Git / GitHub"}
             description={"Amet minim mollit"}
           />
@@ -54,9 +54,9 @@ export const MySkills = () => {
             description={"Amet minim mollit"}
           />
           <Skills
-            iconId={"iconReact"}
-            viewBox={"0 0 32 32"}
-            title={"React"}
+            iconId={""}
+            viewBox={""}
+            title={""}
             description={"Amet minim mollit"}
           />
         </div>
@@ -65,4 +65,5 @@ export const MySkills = () => {
   );
 };
 
-const StyledMySkills = styled.section``;
+const StyledMySkills = styled.section`
+`;

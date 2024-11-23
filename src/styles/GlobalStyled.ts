@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 import { thems } from "./Thems";
-import { LeaveInfo } from "../layout/sections/contacts/leaveInfo/LeaveInfo";
 
 export const GlobalStyled = createGlobalStyle`
 *,
@@ -26,6 +25,11 @@ body {
 
 a {
     text-decoration: none;
+    color: ${thems.colors.link};
+}
+
+a:hover {
+    color: ${thems.colors.accent};
 }
 
 ul {
@@ -34,7 +38,12 @@ ul {
 
 button {
     background-color: unset;
-    border: none;
+    border: transparent;
+    border-radius: 5px;
+    background-color: ${thems.colors.accent};
+
+    cursor: pointer;
+    color: ${thems.colors.title};
 }
 
 section {

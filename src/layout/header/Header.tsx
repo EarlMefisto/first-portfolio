@@ -11,24 +11,27 @@ const Items = ["Home", "Skills", "Works", "Contact"];
 export const Header = () => {
   return (
     <StyledHeader>
-      <Container>
+      <HeaderWrapper>
         <FlexWrapper>
           {/* <DayMode /> */}
-          <HeaderMenu menuItems={Items}/>
+          <HeaderMenu menuItems={Items} />
         </FlexWrapper>
-      </Container>
+      </HeaderWrapper>
     </StyledHeader>
   );
 };
 
 const StyledHeader = styled.header`
-  background-color: #0f1624;
-  padding: 20px;
+  padding: 10px;
   position: fixed;
-  top: 0;
-  left: 30;
-  right: 0;
+  top: 30px;
+  right: 200px;
   z-index: 99999;
 
-  border: 2px solid ${thems.colors.text};
+  border: 4px solid ${thems.colors.title};
+  border-radius: 10px;
+`;
+
+const HeaderWrapper = styled.div`
+margin: 10px 0;
 `;
