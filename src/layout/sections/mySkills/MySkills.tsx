@@ -16,7 +16,7 @@ export const MySkills = () => {
           sint. Velit officia consequat duis enim velit mollit. lorem ipsum
         </SectionText>
 
-        <div
+        <StyledSkils
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(3, auto)",
@@ -59,7 +59,7 @@ export const MySkills = () => {
             title={""}
             description={"Amet minim mollit"}
           />
-        </div>
+        </StyledSkils>
       </Container>
     </StyledMySkills>
   );
@@ -67,3 +67,4 @@ export const MySkills = () => {
 
 const StyledMySkills = styled.section`
 `;
+const StyledSkils = styled.div``

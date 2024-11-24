@@ -18,7 +18,7 @@ export const Footer = () => {
                 viewBox={"0 0 24px 24px"}
               />
             </IconWrapper>
-            <Copyright>2021 All Rights Reserved.Ojjomedia</Copyright>
+            <Copyright>2024 All Rights Reserved</Copyright>
           </FlexWrapper>
         </FooterWrapper>
       </Container>

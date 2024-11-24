@@ -1,23 +1,32 @@
-import React from "react";
 import styled from "styled-components";
-import { FlexWrapper } from "../../../components/FlexWrapper";
+import { ContactsInfo } from "./PropsInfo/ContactInfo";
 import { Container } from "../../../components/Container";
-import { LeaveInfo } from "./leaveInfo/LeaveInfo";
-import { ContactInfo } from "./contactInfo/ContactInfo";
+import { SectionTitle } from "../../../components/SectionTitile";
 
 
-export const Contacts = () => {
+export const ContactInfo = () => {
   return (
-    <StyledContacts >
+    <StyledContactInfo>
       <Container>
-      <FlexWrapper direction={"row"} justify={"space-around"}>
-        <LeaveInfo />
-        <ContactInfo />
-      </FlexWrapper>
+        <SectionTitle>Contact Information</SectionTitle>
+        <StyledInfo>
+          <ContactsInfo iconId={"location"} />
+          <ContactsInfo iconId={"mail"} />
+          <ContactsInfo iconId={"mobile"} />
+        </StyledInfo>
       </Container>
-    </StyledContacts>
+    </StyledContactInfo>
   );
 };
 
-const StyledContacts = styled.section`
+const StyledContactInfo = styled.section`
+  
+`;
+
+
+// description={"Country: Belarus"}
+// description={"Email: hataketodoroke@gmail.com"}
+// description={"Phone: +375*********"}
+const StyledInfo = styled.div`
+
 `;
