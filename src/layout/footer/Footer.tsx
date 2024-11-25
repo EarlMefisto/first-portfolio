@@ -9,28 +9,32 @@ export const Footer = () => {
     <StyledFooter>
       <Container>
         <FooterWrapper>
-          <FlexWrapper justify={"center"}>
-            <IconWrapper>
-              <Icon
-                iconId={"copyright"}
-                width={"24px"}
-                height={"24px"}
-                viewBox={"0 0 24px 24px"}
-              />
-            </IconWrapper>
-            <Copyright>2024 All Rights Reserved</Copyright>
-          </FlexWrapper>
+          <IconWrapper>
+            <Icon
+              iconId={"copyright"}
+              width={"24px"}
+              height={"24px"}
+              viewBox={"0 0 24px 24px"}
+            />
+          </IconWrapper>
+          <Copyright>2024 All Rights Reserved</Copyright>
         </FooterWrapper>
       </Container>
     </StyledFooter>
   );
 };
 
-const StyledFooter = styled.footer``;
+const StyledFooter = styled.footer`
+  @media ${thems.media.mobile} {
+    background-color: ${thems.colors.secondaryBg};
+  }
+`;
 
 const FooterWrapper = styled.div`
+  display: flex;
+  justify-content: center;
   background-color: ${thems.colors.secondaryBg};
-`
+`;
 
 const IconWrapper = styled.div`
   margin: 18px 15px 0;

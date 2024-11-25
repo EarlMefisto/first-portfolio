@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { thems } from "../../../../styles/Thems";
 
 export const TabMenu = (props: { menuItems: Array<string> }) => {
   return (
@@ -33,9 +32,7 @@ const StyledTabMenu = styled.nav`
   }
 `;
 
-const ListItem = styled.li`
-  
-`
+const ListItem = styled.li``;
 const TabLink = styled.a`
   font-family: "Inter", sans-serif;
   font-weight: 500;

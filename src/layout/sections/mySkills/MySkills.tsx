@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { SectionTitle } from "../../../components/SectionTitile";
@@ -16,7 +15,6 @@ export const MySkills = () => {
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. lorem ipsum
         </SectionText>
-
         <FlexWrapper wrap={"wrap"} justify={"space-between"} gap={"20px"}>
           <Skills
             iconId={"iconJS"}
@@ -49,8 +47,6 @@ export const MySkills = () => {
             description={"Amet minim mollit"}
           />
           <Skills
-            iconId={""}
-            viewBox={""}
             title={"advertising"}
             description={"Amet minim mollit"}
           />
@@ -61,7 +57,9 @@ export const MySkills = () => {
 };
 
 const StyledMySkills = styled.section`
+  margin-bottom: 70px;
+
   @media ${thems.media.laptop} {
-    padding: 0 20px 0 20px;
+    padding: 0 10px;
   }
 `;

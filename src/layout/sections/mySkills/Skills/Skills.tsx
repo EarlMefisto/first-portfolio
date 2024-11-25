@@ -1,8 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 import { Icon } from "../../../../components/icon/Icon";
 import { SectionText } from "../../../../components/SectionText";
-import { SectionTitle } from "../../../../components/SectionTitile";
 import { FlexWrapper } from "../../../../components/FlexWrapper";
 import { thems } from "../../../../styles/Thems";
 

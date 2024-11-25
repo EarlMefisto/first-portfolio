@@ -35,6 +35,6 @@ export const MyWorks = () => {
 
 const StyledMyWorks = styled.section`
   @media ${thems.media.laptop} {
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
   }
 `;

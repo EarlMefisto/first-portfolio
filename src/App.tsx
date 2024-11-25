@@ -8,6 +8,7 @@ import { MyWorks } from "./layout/sections/myWorks/MyWorks";
 import { thems } from "./styles/Thems";
 import { LeaveInfo } from "./layout/sections/leaveInfo/LeaveInfo";
 import { WorksContacts } from "./layout/sections/worksContacts/WorksContacts";
+import { MyLocation } from "./components/MyLocation";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
         <MySkills />
         <MyWorks />
         <LeaveInfo />
-        <WorksContacts />
+        {/* <WorksContacts /> */}
+        <MyLocation />
         <Footer />
       </MyFirstPortfolio>
     </div>

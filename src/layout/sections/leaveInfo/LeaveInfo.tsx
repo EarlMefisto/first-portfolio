@@ -2,103 +2,68 @@ import styled from "styled-components";
 import { thems } from "../../../styles/Thems";
 import { Container } from "../../../components/Container";
 import { SectionTitle } from "../../../components/SectionTitile";
-import { Icon } from "../../../components/icon/Icon";
-import { FlexWrapper } from "../../../components/FlexWrapper";
 
 export const LeaveInfo = () => {
   return (
     <Container>
       <StyledLeaveInfo>
         <StyledForm>
-          <SectionTitle>Leave me your info</SectionTitle>
+          <SectionTitle>Leave me your message</SectionTitle>
           <StyledLeaveInfoForm>
+            <StyledLabel htmlFor="textField">
+              Your Full Name (Required)
+            </StyledLabel>
             <StyledLeaveInfoField />
+            <StyledLabel htmlFor="textField">Your Email (Required)</StyledLabel>
             <StyledLeaveInfoField />
+            <StyledLabel htmlFor="textField">Subject</StyledLabel>
             <StyledLeaveInfoField />
-            <StyledLeaveInfoField as={"textarea"} />
+            <StyledLabel htmlFor="textField">Your Message</StyledLabel>
+            <StyledLeaveInfoField as={"textarea"} id="textField" />
+
             <ButtonInfo type={"submit"}>Send Message</ButtonInfo>
           </StyledLeaveInfoForm>
         </StyledForm>
-        <StyledContact>
-          <SectionTitle>Contact Information</SectionTitle>
-          <StyledContactsInfo>
-            <FlexWrapper direction={"column"}>
-              <ContactsContainer>
-                <ContactsInfoLocation>
-                  <InfoWrapper>
-                    <Info iconId={"location"} />
-                  </InfoWrapper>
-                  <div>
-                    <ContactsText>Country: Belarus</ContactsText>
-                    <ContactsText>District: Minsk</ContactsText>
-                    <ContactsText>City: Minsk</ContactsText>
-                  </div>
-                </ContactsInfoLocation>
-
-                <ContactsInfoMail>
-                  <InfoWrapper>
-                    <Info iconId={"mail"} />
-                  </InfoWrapper>
-                  <div>
-                    <ContactsText>Google: ***</ContactsText>
-                    <ContactsText>Yandex: ***</ContactsText>
-                    <ContactsText>Mail.ru: ***</ContactsText>
-                  </div>
-                </ContactsInfoMail>
-
-                <ContactsInfoMobile>
-                  <InfoWrapper>
-                    <Info iconId={"mobile"} />
-                  </InfoWrapper>
-                  <div>
-                    <ContactsText>Telegram @earlmefisto</ContactsText>
-                    <ContactsText>Instagram @swan_iryna</ContactsText>
-                    <ContactsText>LinkedIn ***</ContactsText>
-                  </div>
-                </ContactsInfoMobile>
-              </ContactsContainer>
-            </FlexWrapper>
-          </StyledContactsInfo>
-        </StyledContact>
       </StyledLeaveInfo>
     </Container>
   );
 };
 
-type InfoPropsType = {
-  iconId?: string;
-};
-
-const Info = (props: InfoPropsType) => {
-  return (
-    <StyledContactsInfo>
-      <Icon iconId={props.iconId || "none"} />
-    </StyledContactsInfo>
-  );
-};
-
 const StyledLeaveInfo = styled.section`
   display: flex;
+  justify-content: center;
   gap: 30px;
 `;
 
 const StyledForm = styled.div`
   width: 60%;
+
+  @media ${thems.media.mobile} {
+    width: 100%;
+    margin: 0 10px;
+  }
 `;
 
 const StyledLeaveInfoForm = styled.form`
   display: flex;
   flex-direction: column;
-  
-  gap: 25px;
-  padding: 25px;
-  margin-top: 45px;
+
+  padding: 0 25px 25px ;
+  margin-top: 50px;
 
   background-color: ${thems.colors.secondaryBg};
+
+  @media ${thems.media.mobile} {
+    margin-top: 30px;
+  }
 
   textarea {
     resize: none;
     height: 210px;
+
+    @media ${thems.media.mobile} {
+      height: 110px;
+    }
   }
 `;
 
@@ -117,6 +82,10 @@ const StyledLeaveInfoField = styled.input`
   }
 `;
 
+const StyledLabel = styled.label`
+  padding: 25px 0 8px;
+`
+
 const ButtonInfo = styled.button`
   display: flex;
   align-items: center;
@@ -125,40 +94,10 @@ const ButtonInfo = styled.button`
   width: 159px;
   height: 35px;
   border-radius: 0;
+  margin-top: 25px;
 
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
-`;
-
-const StyledContact = styled.div`
-  width: 40%;
-`;
-
-const StyledContactsInfo = styled.div`
-  padding: 25px 0;
-`;
-
-const ContactsContainer = styled.div``;
-
-const ContactsInfoLocation = styled.div`
-  margin: 18px 0;
-  background-color: ${thems.colors.secondaryBg};
-`;
-
-const ContactsInfoMail = styled.div`
-  background-color: ${thems.colors.secondaryBg};
-`;
-const ContactsInfoMobile = styled.div`
-  margin: 18px 0;
-  background-color: ${thems.colors.secondaryBg};
-`;
-
-const InfoWrapper = styled.div`
-  text-align: center;
-`;
-const ContactsText = styled.div`
-  padding-bottom: 16px;
-  padding-left: 25px;
 `;

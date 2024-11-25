@@ -1,7 +1,6 @@
-import React from "react";
+
 import styled from "styled-components";
 import { DayMode } from "../../components/dayMode/DayMode";
-import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { HeaderMenu } from "./headerMenu/HeaderMenu";
 import { thems } from "../../styles/Thems";

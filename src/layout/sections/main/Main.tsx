@@ -1,11 +1,9 @@
-import React from "react";
 import styled from "styled-components";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Container } from "../../../components/Container";
 import { Button } from "../../../components/Button";
 import photo from "../../../assets/img/photo_2024-10-28_22-37-35.webp";
 import { thems } from "../../../styles/Thems";
-import { Icon } from "../../../components/icon/Icon";
 
 export const Main = () => {
   return (
@@ -52,7 +50,6 @@ const StyledMain = styled.div`
 `;
 
 const StyledTitles = styled.div`
-  width: 100%;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -75,7 +72,6 @@ const StyledMainTitleH2 = styled.h2`
 
 const StyledMainTitleH1 = styled.h1`
   max-width: 500px;
-  width: 100%;
   margin: 0 0 0 60px;
 
   line-height: 124%;

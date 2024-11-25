@@ -14,6 +14,8 @@ export const MyWorksPost = (props: PostPropsType) => {
 };
 
 const PostWrapper = styled.div`
+  position: relative;
+
   max-width: 310px;
   min-height: 300px;
 
@@ -21,17 +23,35 @@ const PostWrapper = styled.div`
     min-width: 100%;
   }
 
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    background: rgba(0, 110, 255, 0.3);
+    backdrop-filter: blur(5px);
+
+    opacity: 0;
+  }
+
   &:hover {
     &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
+      opacity: 1;
+    }
+  }
 
-      background: rgba(0, 110, 255, 0.3);
-      backdrop-filter: blur(5px);
+  @media ${thems.media.laptop} {
+    &::before {
+      opacity: 0;
+    }
+
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
     }
   }
 `;
