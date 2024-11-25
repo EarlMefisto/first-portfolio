@@ -11,14 +11,14 @@ export const Main = () => {
   return (
     <GlobalStyledMain>
       <Container>
-        <FlexWrapper justify={"space-around"} align={"center"}>
+        <FlexWrapper justify={"space-around"} align={"center"} wrap={"wrap"}>
           <StyledMain>
             <StyledTitles>
               <StyledMainTitleH2>
                 I’m <span>Iryna Lebedeva</span>
               </StyledMainTitleH2>
               <StyledMainTitleH1>
-                And I <span>Front-end Developer</span>
+                And I <span>Front-end</span> Developer
               </StyledMainTitleH1>
             </StyledTitles>
             <StyledMainText>
@@ -41,11 +41,18 @@ export const Main = () => {
 
 const GlobalStyledMain = styled.div`
   margin-bottom: 100px;
+
+  @media ${thems.media.tablet} {
+    margin-bottom: 87px;
+  }
 `;
 
-const StyledMain = styled.div``;
+const StyledMain = styled.div`
+  background-color: ${thems.colors.secondaryBg};
+`;
 
 const StyledTitles = styled.div`
+  width: 100%;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -60,13 +67,22 @@ const StyledMainTitleH2 = styled.h2`
   margin: 93px 0 0 60px;
 
   line-height: 124%;
+
+  @media ${thems.media.tablet} {
+    margin: 100px 0 0 20px;
+  }
 `;
 
 const StyledMainTitleH1 = styled.h1`
   max-width: 500px;
+  width: 100%;
   margin: 0 0 0 60px;
 
   line-height: 124%;
+
+  @media ${thems.media.tablet} {
+    margin: 0 0 0 20px;
+  }
 `;
 
 const StyledMainText = styled.span`
@@ -79,6 +95,13 @@ const StyledMainText = styled.span`
   font-size: 15px;
   line-height: 150%;
   text-transform: capitalize;
+
+  @media ${thems.media.mobile} {
+    max-width: 281px;
+    margin: 90px 0 0 32px;
+
+    font-size: 16px;
+  }
 `;
 
 const PhotoWrapper = styled.div`
@@ -97,6 +120,13 @@ const PhotoWrapper = styled.div`
     top: -20px;
     left: 20px;
     z-index: -1;
+
+    @media ${thems.media.tablet} {
+      width: 0;
+      height: 0;
+
+      border: none;
+    }
   }
 `;
 
@@ -104,8 +134,21 @@ const Photo = styled.img`
   width: 325px;
   height: 450px;
   object-fit: cover;
+
+  @media ${thems.media.mobile} {
+    width: 325px;
+    height: 450px;
+  }
 `;
 
 const ButtonWrapper = styled.div`
   margin: 25px 0 74px 60px;
+
+  @media ${thems.media.mobile} {
+    margin: 35px 0 50px 35px;
+
+    button {
+      height: 50px;
+    }
+  }
 `;

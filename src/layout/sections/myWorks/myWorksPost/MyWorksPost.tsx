@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { thems } from "../../../../styles/Thems";
 
 type PostPropsType = {
   src: string;
@@ -13,9 +14,12 @@ export const MyWorksPost = (props: PostPropsType) => {
 };
 
 const PostWrapper = styled.div`
-  text-align: center;
+  max-width: 310px;
+  min-height: 300px;
 
-  position: relative;
+  @media ${thems.media.laptop} {
+    min-width: 100%;
+  }
 
   &:hover {
     &::before {
@@ -34,7 +38,5 @@ const PostWrapper = styled.div`
 
 const PostImage = styled.img`
   width: 100%;
-  height: 300px;
-
-  object-fit: cover;
+  height: 100%;
 `;

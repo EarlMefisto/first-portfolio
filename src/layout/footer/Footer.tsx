@@ -37,7 +37,7 @@ const IconWrapper = styled.div`
 `;
 
 const Copyright = styled.small`
-  margin: 18px 0;
+  padding: 18px 0;
 
   font-family: "Inter", sans-serif;
   font-weight: 400;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { thems } from "../../../../styles/Thems";
 
 export const TabMenu = (props: { menuItems: Array<string> }) => {
   return (
@@ -19,9 +20,16 @@ export const TabMenu = (props: { menuItems: Array<string> }) => {
 const StyledTabMenu = styled.nav`
   ul {
     display: flex;
+    justify-content: space-between;
+    gap: 37px;
+
+    max-width: 606px;
+    width: 100%;
+
+    margin-top: 25px;
     margin-bottom: 50px;
 
-    gap: 37px;
+    border: 1px solid red;
   }
 `;
 

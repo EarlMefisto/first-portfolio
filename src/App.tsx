@@ -7,6 +7,7 @@ import { Header } from "./layout/header/Header";
 import { MyWorks } from "./layout/sections/myWorks/MyWorks";
 import { thems } from "./styles/Thems";
 import { LeaveInfo } from "./layout/sections/leaveInfo/LeaveInfo";
+import { WorksContacts } from "./layout/sections/worksContacts/WorksContacts";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <MySkills />
         <MyWorks />
         <LeaveInfo />
+        <WorksContacts />
         <Footer />
       </MyFirstPortfolio>
     </div>

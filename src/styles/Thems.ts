@@ -8,5 +8,10 @@ export const thems = {
     text: "#EEAEEE",
     link: "#9440D5",
   },
-};
 
+  media: {
+    laptop: "screen and (max-width: 1024px)",
+    tablet: "screen and (max-width: 576px)",
+    mobile: "screen and (max-width: 376px)",
+  },
+};

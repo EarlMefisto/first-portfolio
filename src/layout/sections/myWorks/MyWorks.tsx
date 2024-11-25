@@ -7,6 +7,7 @@ import { MyWorksPost } from "./myWorksPost/MyWorksPost";
 import { TabMenu } from "./tabMenu/TabMenu";
 
 import postImage1 from "../../../assets/img/0cbd17e4381497547009ce81acc4eee3.webp";
+import { thems } from "../../../styles/Thems";
 
 const WorksItems = ["All", "Layout", "App", "Project"];
 
@@ -22,21 +23,18 @@ export const MyWorks = () => {
         <FlexWrapper justify={"center"}>
           <TabMenu menuItems={WorksItems} />
         </FlexWrapper>
-        <StyledMyWorksPost
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, auto)",
-            gap: "20px",
-          }}
-        >
+        <FlexWrapper wrap={"wrap"} justify={"space-between"} gap={"20px"}>
           <MyWorksPost src={postImage1} />
           <MyWorksPost src={postImage1} />
           <MyWorksPost src={postImage1} />
-        </StyledMyWorksPost>
+        </FlexWrapper>
       </Container>
     </StyledMyWorks>
   );
 };
 
-const StyledMyWorks = styled.section``;
-const StyledMyWorksPost = styled.div``;
+const StyledMyWorks = styled.section`
+  @media ${thems.media.laptop} {
+    padding: 0 20px 0 20px;
+  }
+`;

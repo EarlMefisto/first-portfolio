@@ -35,13 +35,23 @@ export const Skills = (props: ServicePropsType) => {
 };
 
 const StyledSkills = styled.div`
-  text-align: center;
+  width: 310px;
+
   background-color: ${thems.colors.secondaryBg};
+
+  @media ${thems.media.laptop} {
+    flex-shrink: 1;
+    flex-grow: 1;
+  }
+
+  @media ${thems.media.mobile} {
+    width: 297px;
+  }
 `;
 
 const IconWrapper = styled.div`
   margin-top: 28px;
-`
+`;
 
 const StyledSkillsTitile = styled.h3`
   font-family: "Inter", sans-serif;

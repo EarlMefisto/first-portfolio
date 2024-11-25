@@ -4,25 +4,20 @@ import { FlexWrapper } from "../../../components/FlexWrapper";
 import { SectionTitle } from "../../../components/SectionTitile";
 import { SectionText } from "../../../components/SectionText";
 import { Container } from "../../../components/Container";
-import { Skills } from "./Skills/PropsSkills";
+import { Skills } from "./Skills/Skills";
+import { thems } from "../../../styles/Thems";
 
 export const MySkills = () => {
   return (
-    <StyledMySkills>
-      <Container>
+    <Container>
+      <StyledMySkills>
         <SectionTitle>My Skills</SectionTitle>
         <SectionText>
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. lorem ipsum
         </SectionText>
 
-        <StyledSkils
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, auto)",
-            gap: "20px",
-          }}
-        >
+        <FlexWrapper wrap={"wrap"} justify={"space-between"} gap={"20px"}>
           <Skills
             iconId={"iconJS"}
             viewBox={"0 0 24 24"}
@@ -56,15 +51,17 @@ export const MySkills = () => {
           <Skills
             iconId={""}
             viewBox={""}
-            title={""}
+            title={"advertising"}
             description={"Amet minim mollit"}
           />
-        </StyledSkils>
-      </Container>
-    </StyledMySkills>
+        </FlexWrapper>
+      </StyledMySkills>
+    </Container>
   );
 };
 
 const StyledMySkills = styled.section`
+  @media ${thems.media.laptop} {
+    padding: 0 20px 0 20px;
+  }
 `;
-const StyledSkils = styled.div``

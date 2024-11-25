@@ -16,4 +16,5 @@ export const Button = styled.button`
   font-weight: 500;
   font-size: 16px;
   text-align: center;
+  text-transform: uppercase;
 `;
