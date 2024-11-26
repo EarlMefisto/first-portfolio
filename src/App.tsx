@@ -6,9 +6,8 @@ import { MySkills } from "./layout/sections/mySkills/MySkills";
 import { Header } from "./layout/header/Header";
 import { MyWorks } from "./layout/sections/myWorks/MyWorks";
 import { thems } from "./styles/Thems";
-import { LeaveInfo } from "./layout/sections/leaveInfo/LeaveInfo";
-import { WorksContacts } from "./layout/sections/worksContacts/WorksContacts";
 import { MyLocation } from "./components/MyLocation";
+import { Connection } from "./layout/sections/connection/Сonnection";
 
 function App() {
   return (
@@ -18,8 +17,7 @@ function App() {
         <Main />
         <MySkills />
         <MyWorks />
-        <LeaveInfo />
-        {/* <WorksContacts /> */}
+        <Connection/>
         <MyLocation />
         <Footer />
       </MyFirstPortfolio>

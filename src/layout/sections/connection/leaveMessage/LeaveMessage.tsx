@@ -1,42 +1,38 @@
 import styled from "styled-components";
-import { thems } from "../../../styles/Thems";
-import { Container } from "../../../components/Container";
-import { SectionTitle } from "../../../components/SectionTitile";
+import { thems } from "../../../../styles/Thems";
+import { Container } from "../../../../components/Container";
+import { SectionTitle } from "../../../../components/SectionTitile";
 
-export const LeaveInfo = () => {
+export const LeaveMessage = () => {
   return (
-    <Container>
-      <StyledLeaveInfo>
-        <StyledForm>
-          <SectionTitle>Leave me your message</SectionTitle>
-          <StyledLeaveInfoForm>
-            <StyledLabel htmlFor="textField">
-              Your Full Name (Required)
-            </StyledLabel>
-            <StyledLeaveInfoField />
-            <StyledLabel htmlFor="textField">Your Email (Required)</StyledLabel>
-            <StyledLeaveInfoField />
-            <StyledLabel htmlFor="textField">Subject</StyledLabel>
-            <StyledLeaveInfoField />
-            <StyledLabel htmlFor="textField">Your Message</StyledLabel>
-            <StyledLeaveInfoField as={"textarea"} id="textField" />
+    <StyledLeaveInfo>
+      <StyledForm>
+        <SectionTitle algin={"left"}>Leave me your message</SectionTitle>
+        <StyledLeaveInfoForm>
+          <StyledLabel htmlFor="textField">
+            Your Full Name (Required)
+          </StyledLabel>
+          <StyledLeaveInfoField />
+          <StyledLabel htmlFor="textField">Your Email (Required)</StyledLabel>
+          <StyledLeaveInfoField />
+          <StyledLabel htmlFor="textField">Subject</StyledLabel>
+          <StyledLeaveInfoField />
+          <StyledLabel htmlFor="textField">Your Message</StyledLabel>
+          <StyledLeaveInfoField as={"textarea"} id="textField" />
 
-            <ButtonInfo type={"submit"}>Send Message</ButtonInfo>
-          </StyledLeaveInfoForm>
-        </StyledForm>
-      </StyledLeaveInfo>
-    </Container>
+          <ButtonInfo type={"submit"}>Send Message</ButtonInfo>
+        </StyledLeaveInfoForm>
+      </StyledForm>
+    </StyledLeaveInfo>
   );
 };
 
 const StyledLeaveInfo = styled.section`
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+
 `;
 
 const StyledForm = styled.div`
-  width: 60%;
+  
 
   @media ${thems.media.mobile} {
     width: 100%;
@@ -48,7 +44,7 @@ const StyledLeaveInfoForm = styled.form`
   display: flex;
   flex-direction: column;
 
-  padding: 0 25px 25px ;
+  padding: 0 25px 25px;
   margin-top: 50px;
 
   background-color: ${thems.colors.secondaryBg};
@@ -84,7 +80,7 @@ const StyledLeaveInfoField = styled.input`
 
 const StyledLabel = styled.label`
   padding: 25px 0 8px;
-`
+`;
 
 const ButtonInfo = styled.button`
   display: flex;
