@@ -81,7 +81,7 @@ const StyledMainTitleH1 = styled.h1`
   }
 `;
 
-const StyledMainText = styled.span`
+const StyledMainText = styled.p`
   display: block;
   max-width: 435px;
   margin: 18px 0 0 60px;

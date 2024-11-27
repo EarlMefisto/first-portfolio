@@ -27,7 +27,6 @@ export const Skills = (props: ServicePropsType) => {
           />
         </IconWrapper>
         <StyledSkillsTitile>{props.title}</StyledSkillsTitile>
-        <SectionText>{props.description}</SectionText>
       </FlexWrapper>
     </StyledSkills>
   );
@@ -35,6 +34,7 @@ export const Skills = (props: ServicePropsType) => {
 
 const StyledSkills = styled.div`
   width: 310px;
+  min-height: 225px;
 
   background-color: ${thems.colors.secondaryBg};
 

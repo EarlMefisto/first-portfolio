@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const TabMenu = (props: { menuItems: Array<string> }) => {
   return (
     <StyledTabMenu>
@@ -12,6 +13,7 @@ export const TabMenu = (props: { menuItems: Array<string> }) => {
           );
         })}
       </ul>
+      
     </StyledTabMenu>
   );
 };
@@ -27,8 +29,6 @@ const StyledTabMenu = styled.nav`
 
     margin-top: 25px;
     margin-bottom: 50px;
-
-    border: 1px solid red;
   }
 `;
 

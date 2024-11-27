@@ -1,25 +1,27 @@
 import styled from "styled-components";
 import { SectionTitle } from "../../../../components/SectionTitile";
 import { Icon } from "../../../../components/icon/Icon";
+import { thems } from "../../../../styles/Thems";
 
 export const WorksContacts = () => {
   return (
     <StyledContacts>
       <SectionTitle>Contact Information</SectionTitle>
+
       <WorksContactsList>
         <WorksContactsItem>
           <WorksContactsLink>
-            <Icon iconId={"gmail"} viewBox={"0 0 7140 540"} />
+            <Icon height={"120px"} width={"100px"} iconId={"instagram"} />
           </WorksContactsLink>
         </WorksContactsItem>
         <WorksContactsItem>
           <WorksContactsLink>
-            <Icon iconId={"telegram"} viewBox={"0 0 1540 104"} />
+            <Icon height={"120px"} width={"100px"} iconId={"telegram"} />
           </WorksContactsLink>
         </WorksContactsItem>
         <WorksContactsItem>
           <WorksContactsLink>
-            <Icon iconId={"linkedin"} viewBox={"0 0 240 15"} />
+            <Icon height={"120px"} width={"100px"} iconId={"linkedin"} />
           </WorksContactsLink>
         </WorksContactsItem>
       </WorksContactsList>
@@ -27,12 +29,20 @@ export const WorksContacts = () => {
   );
 };
 
-const StyledContacts = styled.div`
-  
+const StyledContacts = styled.section`
+  width: 40%;
+
+  @media ${thems.media.laptop} {
+    width: 40%;
+  }
 `;
 
-const WorksContactsList = styled.ul``;
+const WorksContactsList = styled.ul`
+  margin-top: 50px;
 
-const WorksContactsItem = styled.li``
+  text-align: center;
+`;
 
-const WorksContactsLink = styled.a``
+const WorksContactsItem = styled.li``;
+
+const WorksContactsLink = styled.a``;

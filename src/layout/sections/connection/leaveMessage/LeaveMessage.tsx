@@ -1,38 +1,38 @@
 import styled from "styled-components";
 import { thems } from "../../../../styles/Thems";
-import { Container } from "../../../../components/Container";
 import { SectionTitle } from "../../../../components/SectionTitile";
+import { Button } from "../../../../components/Button";
 
 export const LeaveMessage = () => {
   return (
-    <StyledLeaveInfo>
+    <StyledLeaveMessage>
       <StyledForm>
         <SectionTitle algin={"left"}>Leave me your message</SectionTitle>
-        <StyledLeaveInfoForm>
+        <StyledLeaveMessageForm>
           <StyledLabel htmlFor="textField">
             Your Full Name (Required)
           </StyledLabel>
-          <StyledLeaveInfoField />
+          <StyledLeaveMessageField />
           <StyledLabel htmlFor="textField">Your Email (Required)</StyledLabel>
-          <StyledLeaveInfoField />
+          <StyledLeaveMessageField />
           <StyledLabel htmlFor="textField">Subject</StyledLabel>
-          <StyledLeaveInfoField />
+          <StyledLeaveMessageField />
           <StyledLabel htmlFor="textField">Your Message</StyledLabel>
-          <StyledLeaveInfoField as={"textarea"} id="textField" />
+          <StyledLeaveMessageField as={"textarea"} id="textField" />
 
-          <ButtonInfo type={"submit"}>Send Message</ButtonInfo>
-        </StyledLeaveInfoForm>
+          <Button type={"submit"}>Send Message</Button>
+        </StyledLeaveMessageForm>
       </StyledForm>
-    </StyledLeaveInfo>
+    </StyledLeaveMessage>
   );
 };
 
-const StyledLeaveInfo = styled.section`
+const StyledLeaveMessage = styled.section`
+width: 60%;
 
 `;
 
 const StyledForm = styled.div`
-  
 
   @media ${thems.media.mobile} {
     width: 100%;
@@ -40,7 +40,7 @@ const StyledForm = styled.div`
   }
 `;
 
-const StyledLeaveInfoForm = styled.form`
+const StyledLeaveMessageForm = styled.form`
   display: flex;
   flex-direction: column;
 
@@ -63,15 +63,17 @@ const StyledLeaveInfoForm = styled.form`
   }
 `;
 
-const StyledLeaveInfoField = styled.input`
+const StyledLeaveMessageField = styled.input`
   width: 100%;
 
-  background-color: ${thems.colors.text};
+  background-color: ${thems.colors.primaryBg};
 
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 160%;
+
+  border: 2px solid ${thems.colors.primaryBg};
 
   &:focus-visible {
     outline: 2px solid ${thems.colors.accent};
@@ -80,20 +82,4 @@ const StyledLeaveInfoField = styled.input`
 
 const StyledLabel = styled.label`
   padding: 25px 0 8px;
-`;
-
-const ButtonInfo = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 159px;
-  height: 35px;
-  border-radius: 0;
-  margin-top: 25px;
-
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  text-transform: uppercase;
 `;

@@ -8,7 +8,7 @@ export const Footer = () => {
   return (
     <StyledFooter>
       <Container>
-        <FooterWrapper>
+        <FlexWrapper justify={"center"}>
           <IconWrapper>
             <Icon
               iconId={"copyright"}
@@ -18,22 +18,18 @@ export const Footer = () => {
             />
           </IconWrapper>
           <Copyright>2024 All Rights Reserved</Copyright>
-        </FooterWrapper>
+        </FlexWrapper>
       </Container>
     </StyledFooter>
   );
 };
 
 const StyledFooter = styled.footer`
+  background-color: ${thems.colors.secondaryBg};
+
   @media ${thems.media.mobile} {
     background-color: ${thems.colors.secondaryBg};
   }
-`;
-
-const FooterWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  background-color: ${thems.colors.secondaryBg};
 `;
 
 const IconWrapper = styled.div`

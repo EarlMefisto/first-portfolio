@@ -5,8 +5,7 @@ export const thems = {
     accent: "#FFB400",
 
     title: "#5D478B",
-    text: "#EEAEEE",
-    link: "#9440D5",
+    text: "#c9d7e0",
   },
 
   media: {

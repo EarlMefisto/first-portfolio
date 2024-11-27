@@ -5,9 +5,11 @@ import { SectionTitle } from "../../../components/SectionTitile";
 import { SectionText } from "../../../components/SectionText";
 import { MyWorksPost } from "./myWorksPost/MyWorksPost";
 import { TabMenu } from "./tabMenu/TabMenu";
+import { thems } from "../../../styles/Thems";
 
 import postImage1 from "../../../assets/img/0cbd17e4381497547009ce81acc4eee3.webp";
-import { thems } from "../../../styles/Thems";
+import postImage2 from "../../../assets/img/Alcohol_use-main.webp";
+import postImage3 from "../../../assets/img/photo_2024-11-27_16-55-32.webp";
 
 const WorksItems = ["All", "Layout", "App", "Project"];
 
@@ -24,9 +26,12 @@ export const MyWorks = () => {
           <TabMenu menuItems={WorksItems} />
         </FlexWrapper>
         <FlexWrapper wrap={"wrap"} justify={"space-between"} gap={"20px"}>
-          <MyWorksPost src={postImage1} />
-          <MyWorksPost src={postImage1} />
-          <MyWorksPost src={postImage1} />
+          <MyWorksPost
+            src={postImage1}
+            href={"https://earlmefisto.github.io/desert/"}
+          />
+          <MyWorksPost src={postImage2} />
+          <MyWorksPost src={postImage3} />
         </FlexWrapper>
       </Container>
     </StyledMyWorks>

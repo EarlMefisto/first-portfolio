@@ -47,7 +47,7 @@ export const MySkills = () => {
             description={"Amet minim mollit"}
           />
           <Skills
-            title={"advertising"}
+            title={"and other..."}
             description={"Amet minim mollit"}
           />
         </FlexWrapper>

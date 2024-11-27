@@ -1,14 +1,21 @@
 import styled from "styled-components";
 import { thems } from "../../../../styles/Thems";
+import { Icon } from "../../../../components/icon/Icon";
 
 type PostPropsType = {
   src: string;
+  href?: string;
 };
 
 export const MyWorksPost = (props: PostPropsType) => {
   return (
     <PostWrapper>
-      <PostImage src={props.src} alt="" />
+      <PostButton>
+        <PostLink>
+          <Icon iconId={"plus"} width={"50px"} height={"50px"} />
+          <PostImage src={props.src} alt="" />
+        </PostLink>
+      </PostButton>
     </PostWrapper>
   );
 };
@@ -17,11 +24,7 @@ const PostWrapper = styled.div`
   position: relative;
 
   max-width: 310px;
-  min-height: 300px;
-
-  @media ${thems.media.laptop} {
-    min-width: 100%;
-  }
+  width: 100%;
 
   &::before {
     content: "";
@@ -33,6 +36,9 @@ const PostWrapper = styled.div`
 
     background: rgba(0, 110, 255, 0.3);
     backdrop-filter: blur(5px);
+    transition: 400ms;
+
+    cursor: pointer;
 
     opacity: 0;
   }
@@ -44,6 +50,8 @@ const PostWrapper = styled.div`
   }
 
   @media ${thems.media.laptop} {
+    max-width: 100%;
+
     &::before {
       opacity: 0;
     }
@@ -60,3 +68,7 @@ const PostImage = styled.img`
   width: 100%;
   height: 100%;
 `;
+
+const PostButton = styled.button``;
+
+const PostLink = styled.a``;

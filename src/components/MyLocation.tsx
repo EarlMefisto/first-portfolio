@@ -17,13 +17,6 @@ export const MyLocation = () => {
             loading="lazy"
           ></iframe>
         </GoogleMap>
-        <YandexMap>
-          <iframe
-            src="https://yandex.by/map-widget/v1/?ll=27.727503%2C53.882847&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDExNxIc0JHQtdC70LDRgNGD0YHRjCwg0JzRltC90YHQuiIKDQ5y3EEVZpxXQg%2C%2C&tab=attractions&utm_campaign=general_by_desktop_no_all&utm_medium=dstore_bro&utm_source=services&z=10.83"
-            width={"970px"}
-            height={"300px"}
-          ></iframe>
-        </YandexMap>
       </Container>
     </StyledMyLocation>
   );
@@ -35,10 +28,4 @@ const GoogleMap = styled.map`
   justify-content: center;
 
   margin-bottom: 20px;
-`;
-const YandexMap = styled.map`
-  display: flex;
-  justify-content: center;
-
-  margin-bottom: 35px;
 `;

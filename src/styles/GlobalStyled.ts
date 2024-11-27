@@ -25,7 +25,7 @@ body {
 
 a {
     text-decoration: none;
-    color: ${thems.colors.link};
+    color: ${thems.colors.text};
 }
 
 a:hover {
