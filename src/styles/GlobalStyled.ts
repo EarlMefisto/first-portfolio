@@ -24,6 +24,7 @@ body {
 }
 
 a {
+    cursor: pointer;
     text-decoration: none;
     color: ${thems.colors.text};
 }

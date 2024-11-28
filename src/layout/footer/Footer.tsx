@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { FlexWrapper } from "../../components/FlexWrapper";
-import { Icon } from "../../components/icon/Icon";
+import { Icon } from "../../components/Icon";
 import { Container } from "../../components/Container";
 import { thems } from "../../styles/Thems";
 

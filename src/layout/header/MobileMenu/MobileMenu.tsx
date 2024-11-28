@@ -1,32 +1,75 @@
 import styled, { css } from "styled-components";
-import { Icon } from "../../../components/icon/Icon";
 import { thems } from "../../../styles/Thems";
+import { Icon } from "../../../components/Icon";
 
-export const MobileMenu = (props: { menuItems: Array<string> }) => {
+export const MobileMenu = () => {
   return (
     <StyledMobileMenu>
       <BurgerButton isOpen={true}>
         <span></span>
       </BurgerButton>
-      <MobileMenuPopUp isOpen={true}>
-        <ul>
-          {props.menuItems.map((item: string, index: number) => {
-            return (
-              <ListItem key={index}>
-                <Link href="">
-                  <Icon
-                    iconId={"home"}
-                    width={"30"}
-                    height={"30"}
-                    viewBox={"0 0 20 20"}
-                  />
-                  {item}
-                </Link>
-              </ListItem>
-            );
-          })}
-        </ul>
-      </MobileMenuPopUp>
+      <MobileMenuList>
+        <MobileMenuItem>
+          <MobileMenuLink href="">
+            <Icon
+              width={"30"}
+              height={"30"}
+              viewBox={"0 0 18 18"}
+              iconId={"home"}
+            />
+          </MobileMenuLink>
+        </MobileMenuItem>
+        <MobileMenuItem>
+          <MobileMenuLink href="">
+            <Icon
+              width={"30"}
+              height={"30"}
+              viewBox={"0 0 18 18"}
+              iconId={"service"}
+            />
+          </MobileMenuLink>
+        </MobileMenuItem>
+        <MobileMenuItem>
+          <MobileMenuLink href="">
+            <Icon
+              width={"30"}
+              height={"30"}
+              viewBox={"0 0 18 18"}
+              iconId={"works"}
+            />
+          </MobileMenuLink>
+        </MobileMenuItem>
+        <MobileMenuItem>
+          <MobileMenuLink href="">
+            <Icon
+              width={"30"}
+              height={"30"}
+              viewBox={"0 0 18 18"}
+              iconId={"message"}
+            />
+          </MobileMenuLink>
+        </MobileMenuItem>
+        <MobileMenuItem>
+          <MobileMenuLink href="">
+            <Icon
+              width={"30"}
+              height={"30"}
+              viewBox={"0 0 18 18"}
+              iconId={"contact"}
+            />
+          </MobileMenuLink>
+        </MobileMenuItem>
+        <MobileMenuItem>
+          <MobileMenuLink href="">
+            <Icon
+              width={"30"}
+              height={"30"}
+              viewBox={"0 0 18 18"}
+              iconId={"location"}
+            />
+          </MobileMenuLink>
+        </MobileMenuItem>
+      </MobileMenuList>
     </StyledMobileMenu>
   );
 };
@@ -125,5 +168,6 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
   }
 `;
 
-const ListItem = styled.li``;
-const Link = styled.a``;
+const MobileMenuItem = styled.li``;
+const MobileMenuLink = styled.a``;
+const MobileMenuList = styled.ul``;

@@ -1,21 +1,24 @@
 import styled from "styled-components";
 import { SectionTitle } from "../../../../components/SectionTitile";
-import { Icon } from "../../../../components/icon/Icon";
+import { Icon } from "../../../../components/Icon";
 import { thems } from "../../../../styles/Thems";
 
 export const WorksContacts = () => {
   return (
     <StyledContacts>
       <SectionTitle>Contact Information</SectionTitle>
-
       <WorksContactsList>
         <WorksContactsItem>
-          <WorksContactsLink>
+          <WorksContactsLink
+            href={
+              "https://www.instagram.com/swan__irina?igsh=MWIwaDlzOWNiODVqMw%3D%3D&utm_source=qr"
+            }
+          >
             <Icon height={"120px"} width={"100px"} iconId={"instagram"} />
           </WorksContactsLink>
         </WorksContactsItem>
         <WorksContactsItem>
-          <WorksContactsLink>
+          <WorksContactsLink href={"https://t.me/earlmefisto"}>
             <Icon height={"120px"} width={"100px"} iconId={"telegram"} />
           </WorksContactsLink>
         </WorksContactsItem>

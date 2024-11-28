@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { thems } from "../../../../styles/Thems";
-import { Icon } from "../../../../components/icon/Icon";
+import { Icon } from "../../../../components/Icon";
+import { Button } from "../../../../components/Button";
 
 type PostPropsType = {
   src: string;
@@ -10,12 +11,8 @@ type PostPropsType = {
 export const MyWorksPost = (props: PostPropsType) => {
   return (
     <PostWrapper>
-      <PostButton>
-        <PostLink>
-          <Icon iconId={"plus"} width={"50px"} height={"50px"} />
-          <PostImage src={props.src} alt="" />
-        </PostLink>
-      </PostButton>
+      <PostImage src={props.src} alt="" />
+      <Button>push me</Button>
     </PostWrapper>
   );
 };
@@ -24,7 +21,6 @@ const PostWrapper = styled.div`
   position: relative;
 
   max-width: 310px;
-  width: 100%;
 
   &::before {
     content: "";
@@ -43,7 +39,19 @@ const PostWrapper = styled.div`
     opacity: 0;
   }
 
+  ${Button} {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   &:hover {
+    ${Button} {
+      opacity: 1;
+      transition: 400ms;
+    }
     &::before {
       opacity: 1;
     }
@@ -68,7 +76,3 @@ const PostImage = styled.img`
   width: 100%;
   height: 100%;
 `;
-
-const PostButton = styled.button``;
-
-const PostLink = styled.a``;

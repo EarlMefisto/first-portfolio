@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { thems } from "../../../../styles/Thems";
 import { SectionTitle } from "../../../../components/SectionTitile";
 import { Button } from "../../../../components/Button";
+import { FlexWrapper } from "../../../../components/FlexWrapper";
 
 export const LeaveMessage = () => {
   return (
@@ -19,8 +20,10 @@ export const LeaveMessage = () => {
           <StyledLeaveMessageField />
           <StyledLabel htmlFor="textField">Your Message</StyledLabel>
           <StyledLeaveMessageField as={"textarea"} id="textField" />
-
-          <Button type={"submit"}>Send Message</Button>
+          <FlexWrapper gap={"20px"}>
+            <Button type={"submit"}>Send Message</Button>
+            <Button type={"reset"}>Reset</Button>
+          </FlexWrapper>
         </StyledLeaveMessageForm>
       </StyledForm>
     </StyledLeaveMessage>
@@ -44,7 +47,7 @@ const StyledLeaveMessageForm = styled.form`
   display: flex;
   flex-direction: column;
 
-  padding: 0 25px 25px;
+  padding: 0 35px 30px;
   margin-top: 50px;
 
   background-color: ${thems.colors.secondaryBg};
@@ -66,6 +69,7 @@ const StyledLeaveMessageForm = styled.form`
 const StyledLeaveMessageField = styled.input`
   width: 100%;
 
+  color: white;
   background-color: ${thems.colors.primaryBg};
 
   font-family: "Inter", sans-serif;
@@ -74,6 +78,8 @@ const StyledLeaveMessageField = styled.input`
   line-height: 160%;
 
   border: 2px solid ${thems.colors.primaryBg};
+
+  padding: 5px;
 
   &:focus-visible {
     outline: 2px solid ${thems.colors.accent};

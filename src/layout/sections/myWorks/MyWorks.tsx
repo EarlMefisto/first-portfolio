@@ -26,12 +26,26 @@ export const MyWorks = () => {
           <TabMenu menuItems={WorksItems} />
         </FlexWrapper>
         <FlexWrapper wrap={"wrap"} justify={"space-between"} gap={"20px"}>
-          <MyWorksPost
-            src={postImage1}
-            href={"https://earlmefisto.github.io/desert/"}
-          />
-          <MyWorksPost src={postImage2} />
-          <MyWorksPost src={postImage3} />
+          <MyWorksList>
+            <MyWorksItem>
+              <MyWorksLink href={"https://earlmefisto.github.io/desert/"}>
+                <MyWorksPost src={postImage1} />
+              </MyWorksLink>
+            </MyWorksItem>
+          </MyWorksList>
+          <MyWorksList>
+            <MyWorksItem>
+              <MyWorksLink>
+                <MyWorksPost src={postImage2} />
+              </MyWorksLink>
+            </MyWorksItem>
+          </MyWorksList>
+          <MyWorksList>
+            <MyWorksItem>
+              <MyWorksLink></MyWorksLink>
+              <MyWorksPost src={postImage3} />
+            </MyWorksItem>
+          </MyWorksList>
         </FlexWrapper>
       </Container>
     </StyledMyWorks>
@@ -43,3 +57,6 @@ const StyledMyWorks = styled.section`
     padding: 0 20px;
   }
 `;
+const MyWorksList = styled.ul``
+const MyWorksItem = styled.li``;
+const MyWorksLink = styled.a``;

@@ -8,8 +8,8 @@ import { thems } from "../../../styles/Thems";
 
 export const MySkills = () => {
   return (
-    <Container>
-      <StyledMySkills>
+    <StyledMySkills>
+      <Container>
         <SectionTitle>My Skills</SectionTitle>
         <SectionText>
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -46,13 +46,10 @@ export const MySkills = () => {
             title={"React"}
             description={"Amet minim mollit"}
           />
-          <Skills
-            title={"and other..."}
-            description={"Amet minim mollit"}
-          />
+          <Skills title={"and other..."} description={"Amet minim mollit"} />
         </FlexWrapper>
-      </StyledMySkills>
-    </Container>
+      </Container>
+    </StyledMySkills>
   );
 };
 

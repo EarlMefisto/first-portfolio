@@ -1,42 +1,33 @@
-
 import styled from "styled-components";
-import { DayMode } from "../../components/dayMode/DayMode";
+import { DayMode } from "./dayMode/DayMode";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { HeaderMenu } from "./headerMenu/HeaderMenu";
 import { thems } from "../../styles/Thems";
-import { MobileMenu } from "./MobileMenu/MobileMenu";
-
-const Items = ["Home", "Skills", "Works", "Contact"];
 
 export const Header = () => {
   return (
     <StyledHeader>
-      <HeaderWrapper>
-        <FlexWrapper>
-          {/* <DayMode /> */}
-          <HeaderMenu menuItems={Items} />
-          <MobileMenu menuItems={Items} />
-        </FlexWrapper>
-      </HeaderWrapper>
+      <FlexWrapper direction={"column"} align={"center"} gap={"74px"}>
+        <DayMode />
+        <HeaderMenu />
+      </FlexWrapper>
     </StyledHeader>
   );
 };
 
 const StyledHeader = styled.header`
-  padding: 10px;
+  padding: 21px;
+  min-height: 650px;
+
   position: fixed;
-  top: 30px;
-  right: 80px;
+  top: 20px;
+  right: 200px;
   z-index: 99999;
 
   border: 3px solid ${thems.colors.title};
-  border-radius: 5px;
 
-  @media ${thems.media.tablet} {
+  @media ${thems.media.smallDisplay} {
     display: none;
-  }
-`;
 
-const HeaderWrapper = styled.div`
-margin: 10px 0;
+  }
 `;

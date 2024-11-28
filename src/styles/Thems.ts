@@ -9,6 +9,7 @@ export const thems = {
   },
 
   media: {
+    smallDisplay: "screen and (max-width: 1624px)",
     laptop: "screen and (max-width: 1024px)",
     tablet: "screen and (max-width: 576px)",
     mobile: "screen and (max-width: 376px)",
