@@ -57,6 +57,8 @@ const StyledMyWorks = styled.section`
     padding: 0 20px;
   }
 `;
-const MyWorksList = styled.ul``
+const MyWorksList = styled.ul``;
+
 const MyWorksItem = styled.li``;
+
 const MyWorksLink = styled.a``;

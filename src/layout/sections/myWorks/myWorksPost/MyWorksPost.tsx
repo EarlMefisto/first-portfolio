@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { thems } from "../../../../styles/Thems";
-import { Icon } from "../../../../components/Icon";
 import { Button } from "../../../../components/Button";
 
 type PostPropsType = {

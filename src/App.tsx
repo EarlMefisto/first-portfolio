@@ -1,13 +1,13 @@
 import "./App.css";
 import styled from "styled-components";
-import { Main } from "./layout/sections/main/Main";
-import { Footer } from "./layout/footer/Footer";
-import { MySkills } from "./layout/sections/mySkills/MySkills";
 import { Header } from "./layout/header/Header";
+import { Main } from "./layout/sections/main/Main";
+import { MySkills } from "./layout/sections/mySkills/MySkills";
 import { MyWorks } from "./layout/sections/myWorks/MyWorks";
-import { thems } from "./styles/Thems";
-import { MyLocation } from "./components/MyLocation";
 import { Connection } from "./layout/sections/connection/Сonnection";
+import { MyLocation } from "./components/MyLocation";
+import { Footer } from "./layout/footer/Footer";
+import { thems } from "./styles/Thems";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Main />
         <MySkills />
         <MyWorks />
-        <Connection/>
+        <Connection />
         <MyLocation />
         <Footer />
       </MyFirstPortfolio>

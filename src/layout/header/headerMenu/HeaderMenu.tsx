@@ -71,14 +71,16 @@ export const HeaderMenu = () => {
   );
 };
 
-const StyledHeaderMenu = styled.nav`
-`;
+const StyledHeaderMenu = styled.nav``;
+
 const HeaderMenuList = styled.ul``;
+
 const HeaderMenuItem = styled.li`
   display: flex;
   gap: 10px;
   margin: 20px 0;
 `;
+
 const HeaderMenuLink = styled.a`
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;

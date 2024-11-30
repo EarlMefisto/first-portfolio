@@ -8,6 +8,4 @@ export const Container = styled.div`
   @media ${thems.media.mobile} {
     max-width: 345px;
   }
-
-  /* outline: 1px solid #663399; */
 `;

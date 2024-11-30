@@ -4,15 +4,15 @@ import styled from "styled-components";
 export const TabMenu = (props: { menuItems: Array<string> }) => {
   return (
     <StyledTabMenu>
-      <ul>
+      <TabMenuList>
         {props.menuItems.map((item: string, index: number) => {
           return (
-            <ListItem key={index}>
-              <TabLink href="">{item}</TabLink>
-            </ListItem>
+            <TabMenuItem key={index}>
+              <TabMenuLink href="">{item}</TabMenuLink>
+            </TabMenuItem>
           );
         })}
-      </ul>
+      </TabMenuList>
       
     </StyledTabMenu>
   );
@@ -32,8 +32,11 @@ const StyledTabMenu = styled.nav`
   }
 `;
 
-const ListItem = styled.li``;
-const TabLink = styled.a`
+const TabMenuList = styled.ul``
+
+const TabMenuItem = styled.li``;
+
+const TabMenuLink = styled.a`
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 18px;

@@ -82,6 +82,12 @@ display: none;
 }
 `;
 
+const MobileMenuItem = styled.li``;
+
+const MobileMenuLink = styled.a``;
+
+const MobileMenuList = styled.ul``;
+
 const MobileMenuPopUp = styled.div<{ isOpen: boolean }>`
   position: fixed;
   top: 0;
@@ -168,6 +174,4 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
   }
 `;
 
-const MobileMenuItem = styled.li``;
-const MobileMenuLink = styled.a``;
-const MobileMenuList = styled.ul``;
+

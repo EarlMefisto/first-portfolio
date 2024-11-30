@@ -23,7 +23,7 @@ export const WorksContacts = () => {
           </WorksContactsLink>
         </WorksContactsItem>
         <WorksContactsItem>
-          <WorksContactsLink>
+          <WorksContactsLink href={"https://www.linkedin.com/in/earlmefisto/"}>
             <Icon height={"120px"} width={"100px"} iconId={"linkedin"} />
           </WorksContactsLink>
         </WorksContactsItem>

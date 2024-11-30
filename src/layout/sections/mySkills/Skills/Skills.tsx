@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Icon } from "../../../../components/Icon";
-import { SectionText } from "../../../../components/SectionText";
 import { FlexWrapper } from "../../../../components/FlexWrapper";
 import { thems } from "../../../../styles/Thems";
 

@@ -2,8 +2,10 @@ import styled from "styled-components";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Container } from "../../../components/Container";
 import { Button } from "../../../components/Button";
-import photo from "../../../assets/img/photo_2024-10-28_22-37-35.webp";
 import { thems } from "../../../styles/Thems";
+
+import photo from "../../../assets/img/photo_2024-10-28_22-37-35.webp";
+
 
 export const Main = () => {
   return (

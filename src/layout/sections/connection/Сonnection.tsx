@@ -4,8 +4,6 @@ import { WorksContacts } from "./worksContacts/WorksContacts";
 import { Container } from "../../../components/Container";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 
-
-
 export const Connection = () => {
   return (
     <StyledConnection>
@@ -19,6 +17,4 @@ export const Connection = () => {
   );
 };
 
-const StyledConnection = styled.section`
- 
-`;
+const StyledConnection = styled.section``;
