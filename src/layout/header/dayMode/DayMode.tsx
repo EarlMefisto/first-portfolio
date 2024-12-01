@@ -1,4 +1,3 @@
-import React from "react";
 import { Icon } from "../../../components/Icon";
 import styled from "styled-components";
 import { thems } from "../../../styles/Thems";
@@ -12,6 +11,7 @@ export const DayMode = () => {
         height={"30"}
         viewBox={"0 0 30 30"}
       />
+      <DayModeButton />
     </StyledDayMode>
   );
 };
@@ -35,3 +35,5 @@ const StyledDayMode = styled.div`
     background-color: ${thems.colors.accent};
   }
 `;
+
+const DayModeButton = styled.button``;
