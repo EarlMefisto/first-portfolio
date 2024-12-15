@@ -71,14 +71,15 @@ export const HeaderMenu = () => {
   );
 };
 
-const StyledHeaderMenu = styled.nav``;
+const StyledHeaderMenu = styled.nav`
+`;
 
 const HeaderMenuList = styled.ul``;
 
 const HeaderMenuItem = styled.li`
   display: flex;
   gap: 10px;
-  margin: 20px 0;
+  margin: 23px 0;
 `;
 
 const HeaderMenuLink = styled.a`

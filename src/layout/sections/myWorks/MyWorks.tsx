@@ -55,6 +55,10 @@ export const MyWorks = () => {
 const StyledMyWorks = styled.section`
   @media ${thems.media.laptop} {
     padding: 0 20px;
+
+    ${FlexWrapper} {
+      justify-content: center;
+    }
   }
 `;
 const MyWorksList = styled.ul``;

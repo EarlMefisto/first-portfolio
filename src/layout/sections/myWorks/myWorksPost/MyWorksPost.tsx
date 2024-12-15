@@ -19,8 +19,6 @@ export const MyWorksPost = (props: PostPropsType) => {
 const PostWrapper = styled.div`
   position: relative;
 
-  max-width: 310px;
-
   &::before {
     content: "";
     position: absolute;
@@ -57,8 +55,6 @@ const PostWrapper = styled.div`
   }
 
   @media ${thems.media.laptop} {
-    max-width: 100%;
-
     &::before {
       opacity: 0;
     }
@@ -72,6 +68,12 @@ const PostWrapper = styled.div`
 `;
 
 const PostImage = styled.img`
-  width: 100%;
-  height: 100%;
+  max-width: 310px;
+  min-height: 310px;
+  object-fit: cover;
+
+  @media ${thems.media.laptop} {
+    width: 100%;
+    object-fit: cover;
+  }
 `;

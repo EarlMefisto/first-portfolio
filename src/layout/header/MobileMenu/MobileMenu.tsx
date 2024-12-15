@@ -5,71 +5,73 @@ import { Icon } from "../../../components/Icon";
 export const MobileMenu = () => {
   return (
     <StyledMobileMenu>
-      <BurgerButton isOpen={true}>
+      <BurgerButton isOpen={false}>
         <span></span>
       </BurgerButton>
-      <MobileMenuList>
-        <MobileMenuItem>
-          <MobileMenuLink href="">
-            <Icon
-              width={"30"}
-              height={"30"}
-              viewBox={"0 0 18 18"}
-              iconId={"home"}
-            />
-          </MobileMenuLink>
-        </MobileMenuItem>
-        <MobileMenuItem>
-          <MobileMenuLink href="">
-            <Icon
-              width={"30"}
-              height={"30"}
-              viewBox={"0 0 18 18"}
-              iconId={"service"}
-            />
-          </MobileMenuLink>
-        </MobileMenuItem>
-        <MobileMenuItem>
-          <MobileMenuLink href="">
-            <Icon
-              width={"30"}
-              height={"30"}
-              viewBox={"0 0 18 18"}
-              iconId={"works"}
-            />
-          </MobileMenuLink>
-        </MobileMenuItem>
-        <MobileMenuItem>
-          <MobileMenuLink href="">
-            <Icon
-              width={"30"}
-              height={"30"}
-              viewBox={"0 0 18 18"}
-              iconId={"message"}
-            />
-          </MobileMenuLink>
-        </MobileMenuItem>
-        <MobileMenuItem>
-          <MobileMenuLink href="">
-            <Icon
-              width={"30"}
-              height={"30"}
-              viewBox={"0 0 18 18"}
-              iconId={"contact"}
-            />
-          </MobileMenuLink>
-        </MobileMenuItem>
-        <MobileMenuItem>
-          <MobileMenuLink href="">
-            <Icon
-              width={"30"}
-              height={"30"}
-              viewBox={"0 0 18 18"}
-              iconId={"location"}
-            />
-          </MobileMenuLink>
-        </MobileMenuItem>
-      </MobileMenuList>
+      <MobileMenuPopUp isOpen={false}>
+        <MobileMenuList>
+          <MobileMenuItem>
+            <MobileMenuLink href="">
+              <Icon
+                width={"30"}
+                height={"30"}
+                viewBox={"0 0 18 18"}
+                iconId={"home"}
+              />
+            </MobileMenuLink>
+          </MobileMenuItem>
+          <MobileMenuItem>
+            <MobileMenuLink href="">
+              <Icon
+                width={"30"}
+                height={"30"}
+                viewBox={"0 0 18 18"}
+                iconId={"service"}
+              />
+            </MobileMenuLink>
+          </MobileMenuItem>
+          <MobileMenuItem>
+            <MobileMenuLink href="">
+              <Icon
+                width={"30"}
+                height={"30"}
+                viewBox={"0 0 18 18"}
+                iconId={"works"}
+              />
+            </MobileMenuLink>
+          </MobileMenuItem>
+          <MobileMenuItem>
+            <MobileMenuLink href="">
+              <Icon
+                width={"30"}
+                height={"30"}
+                viewBox={"0 0 18 18"}
+                iconId={"message"}
+              />
+            </MobileMenuLink>
+          </MobileMenuItem>
+          <MobileMenuItem>
+            <MobileMenuLink href="">
+              <Icon
+                width={"30"}
+                height={"30"}
+                viewBox={"0 0 18 18"}
+                iconId={"contact"}
+              />
+            </MobileMenuLink>
+          </MobileMenuItem>
+          <MobileMenuItem>
+            <MobileMenuLink href="">
+              <Icon
+                width={"30"}
+                height={"30"}
+                viewBox={"0 0 18 18"}
+                iconId={"location"}
+              />
+            </MobileMenuLink>
+          </MobileMenuItem>
+        </MobileMenuList>
+      </MobileMenuPopUp>
     </StyledMobileMenu>
   );
 };
@@ -77,7 +79,7 @@ export const MobileMenu = () => {
 const StyledMobileMenu = styled.nav`
 display: none;
 
-@media ${thems.media.tablet} {
+@media ${thems.media.laptop} {
   display: block;
 }
 `;
@@ -94,8 +96,8 @@ const MobileMenuPopUp = styled.div<{ isOpen: boolean }>`
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 99999;
-  background-color: ${thems.colors.secondaryBg};
+  z-index: 999999;
+  background-color: rgba(21, 31, 52, 0.987);
   display: none;
 
   ${(props) =>
@@ -108,29 +110,30 @@ const MobileMenuPopUp = styled.div<{ isOpen: boolean }>`
 
   ul {
     display: flex;
-    gap: 43px;
+    gap: 30px;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
 `;
 
 const BurgerButton = styled.button<{ isOpen: boolean }>`
   position: fixed;
-  top: 100px;
-  right: 300px;
-  width: 50px;
-  height: 50px;
+  top: -100px;
+  right: -100px;
+  width: 200px;
+  height: 200px;
   z-index: 9999999;
 
   span {
     display: block;
     width: 36px;
     height: 2px;
-    background-color: ${thems.colors.accent};
+    background-color: rgba(255, 179, 0, 0.959);
 
     position: absolute;
-    right: 31px;
-    top: 34px;
+    left: 40px;
+    bottom: 50px;
 
     ${(props) =>
       props.isOpen &&
@@ -143,23 +146,24 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       display: block;
       width: 36px;
       height: 2px;
-      background-color: ${thems.colors.secondaryBg};
+      background-color: rgba(255, 179, 0, 0.959);
 
       position: absolute;
-      transform: translateY(-20px);
+      transform: translateY(-10px);
 
       ${(props) =>
         props.isOpen &&
         css<{ isOpen: boolean }>`
-          transform: rotate(-45deg) translateY(0px);
+          transform: rotate(-45deg) translateY(0);
         `}
     }
 
     &::after {
+      content: "";
       display: block;
       width: 24px;
       height: 2px;
-      color: ${thems.colors.secondaryBg};
+      background-color: rgba(255, 179, 0, 0.959);
 
       position: absolute;
       transform: translateY(10px);
@@ -167,7 +171,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       ${(props) =>
         props.isOpen &&
         css<{ isOpen: boolean }>`
-          transform: rotate(-45deg) translateY(0px);
+          transform: rotate(45deg) translateY(0);
           width: 36px;
         `}
     }

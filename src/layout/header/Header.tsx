@@ -3,6 +3,7 @@ import { DayMode } from "./dayMode/DayMode";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { HeaderMenu } from "./headerMenu/HeaderMenu";
 import { thems } from "../../styles/Thems";
+import { MobileMenu } from "./MobileMenu/MobileMenu";
 
 export const Header = () => {
   return (
@@ -10,6 +11,7 @@ export const Header = () => {
       <FlexWrapper direction={"column"} align={"center"} gap={"74px"}>
         <DayMode />
         <HeaderMenu />
+        <MobileMenu />
       </FlexWrapper>
     </StyledHeader>
   );
@@ -28,6 +30,5 @@ const StyledHeader = styled.header`
 
   @media ${thems.media.smallDisplay} {
     display: none;
-
   }
 `;
