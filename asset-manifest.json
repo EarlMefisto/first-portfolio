@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/first-portfolio/static/css/main.31d6cfe0.css",
-    "main.js": "/first-portfolio/static/js/main.de9e4cd3.js",
+    "main.js": "/first-portfolio/static/js/main.8bd7cdf2.js",
     "static/js/787.25eaef86.chunk.js": "/first-portfolio/static/js/787.25eaef86.chunk.js",
     "static/media/Alcohol_use-main.webp": "/first-portfolio/static/media/Alcohol_use-main.65a221b354e435a909c2.webp",
     "static/media/photo_2024-11-27_16-55-32.webp": "/first-portfolio/static/media/photo_2024-11-27_16-55-32.6923a245316d9f0dffed.webp",
@@ -9,11 +9,11 @@
     "static/media/photo_2024-10-28_22-37-35.webp": "/first-portfolio/static/media/photo_2024-10-28_22-37-35.18e4ff5712d120fc239c.webp",
     "static/media/webp": "/first-portfolio/static/media/0cbd17e4381497547009ce81acc4eee3.f5b4e868558bd77a03cf.webp",
     "index.html": "/first-portfolio/index.html",
-    "main.de9e4cd3.js.map": "/first-portfolio/static/js/main.de9e4cd3.js.map",
+    "main.8bd7cdf2.js.map": "/first-portfolio/static/js/main.8bd7cdf2.js.map",
     "787.25eaef86.chunk.js.map": "/first-portfolio/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.de9e4cd3.js"
+    "static/js/main.8bd7cdf2.js"
   ]
 }
