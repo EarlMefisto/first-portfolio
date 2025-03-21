@@ -11,7 +11,7 @@ export const WorksContacts = () => {
         <WorksContactsItem>
           <WorksContactsLink
             href={
-              "https://www.instagram.com/swan__irina?igsh=MWIwaDlzOWNiODVqMw%3D%3D&utm_source=qr"
+              "https://www.instagram.com/swanayran?igsh=MWIwaDlzOWNiODVqMw%3D%3D&utm_source=qr"
             }
           >
             <Icon height={"120px"} width={"100px"} iconId={"instagram"} />

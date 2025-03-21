@@ -26,7 +26,7 @@ const StyledHeader = styled.header`
   right: 200px;
   z-index: 99999;
 
-  border: 3px solid ${thems.colors.title};
+  /* border: 3px solid ${thems.colors.title}; */
 
   @media ${thems.media.smallDisplay} {
     display: none;

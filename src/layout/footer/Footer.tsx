@@ -17,7 +17,7 @@ export const Footer = () => {
               viewBox={"0 0 24px 24px"}
             />
           </IconWrapper>
-          <Copyright>2024 All Rights Reserved</Copyright>
+          <Copyright>2024 All Rights Reserved by Irina Lebedeva</Copyright>
         </FlexWrapper>
       </Container>
     </StyledFooter>
